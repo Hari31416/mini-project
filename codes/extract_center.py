@@ -242,7 +242,7 @@ class CenterExtracter:
                 Xs[i] = np.ones(self.image_final.shape[0])
         return Xs
 
-    def _center_x_(self, image):
+    def _center_x_(self, image, reverse=False):
         """
         Calculates the left and right x coordinates of the box binding the drop
 
@@ -259,13 +259,17 @@ class CenterExtracter:
             right x coordinate of the box binding the drop
 
         """
-        xs = image.argmin(axis=0)
+        if reverse:
+            xs = image.argmax(axis=0)
+        else:
+            xs = image.argmin(axis=0)
         xss = np.nonzero(xs)
         xl = xss[0][0]
         xr = xss[0][-1]
+        self.centers_x = (xl, xr)
         return xl, xr
 
-    def _center_y_(self, image):
+    def _center_y_(self, image, reverse=False):
         """
         Calculates the up and down y coordinates of the box binding the drop
 
@@ -281,13 +285,22 @@ class CenterExtracter:
         yd : int
             lower y coordinate of the box binding the drop
         """
-        ys = image.argmin(axis=1)
+        if reverse:
+            ys = image.argmax(axis=1)
+        else:
+            ys = image.argmin(axis=1)
         yss = np.nonzero(ys)
         yu = yss[0][0]
         yd = yss[0][-1]
+        self.centers_y = (yu, yd)
         return yu, yd
 
-    def _center_and_radius_(self, image, crop_included=True):
+    def _center_and_radius_(
+        self,
+        image,
+        reverse,
+        crop_included=True,
+    ):
         """
         Calculates the center of the drop.
 
@@ -303,10 +316,12 @@ class CenterExtracter:
         r : int
             radius of the drop
         """
-        (xl, xr), (yu, yd) = self._center_x_(image), self._center_y_(image)
+        (xl, xr), (yu, yd) = self._center_x_(image, reverse=reverse), self._center_y_(
+            image, reverse=reverse
+        )
 
-        r1 = np.abs((xl - xr)) / 2
-        r2 = np.abs((yu - yd)) / 2
+        r1 = int(np.abs((xl - xr)) / 2)
+        r2 = int(np.abs((yu - yd)) / 2)
         r = int((r1 + r2) / 2)
         if crop_included:
             x = int(self.X + self.x + xl + r)
@@ -315,8 +330,8 @@ class CenterExtracter:
             x = int(self.x + xl + r)
             y = int(self.y + yu + r)
         self.center = (x, y)
-        self.radius = r
-        return (x, y), r
+        self.radii = (r1, r2)
+        return (x, y), (r1, r2)
 
     def _show_image_(self, image, title="", binary=False, threshold=110):
         """
@@ -364,9 +379,29 @@ class CenterExtracter:
         plt.title(title)
         plt.show()
 
+    def _subtract_image_(self, image, ref_image="ref_image.jpg"):
+        """
+        Subtracts the reference image from the image.
+
+        Parameters
+        ----------
+        ref_image : numpy.ndarray
+            reference image
+        image : numpy.ndarray
+            image to be subtracted
+
+        Returns
+        -------
+        numpy.ndarray
+            subtracted image
+        """
+        ref_image_np = plt.imread(ref_image)
+        return np.maximum((ref_image_np / 255.0 - image / 255.0) * 255, 0)
+
     def get_center(
         self,
         image_path,
+        subtract=False,
         x=0,
         y=0,
         h=50,
@@ -377,6 +412,7 @@ class CenterExtracter:
         plot=True,
         threshold=110,
         crop_included=True,
+        reverse=False,
     ):
         """
         Returns the center of the drop.
@@ -410,9 +446,17 @@ class CenterExtracter:
             center of the drop
         """
         # Reading image
-        image = self._read_image_(image_path, output=output)
+        if isinstance(image_path, str):
+            self.image = self._read_image_(image_path, output=output)
+        else:
+            self.image = image_path
+        image = self.image
         # Converting to numpy array
         image = self._convert_to_array_(image)
+        # Subtractng the reference image
+        if subtract:
+            reverse = True
+            image = self._subtract_image_(image)
         # Cropping the image
         image = self._crop_(image, x, y, h, w)
         # Thresholding the image
@@ -421,7 +465,9 @@ class CenterExtracter:
             # Stricting the image to the line
             image = self._stricting_(x, y)
         # calculating center
-        center, radius = self._center_and_radius_(image, crop_included=crop_included)
+        center, radius = self._center_and_radius_(
+            image, crop_included=crop_included, reverse=reverse
+        )
         if plot:
             self._plot_(title)
 
