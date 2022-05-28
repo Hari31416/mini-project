@@ -472,3 +472,4 @@ class CenterExtracter:
             self._plot_(title)
 
         return radius, center
+
