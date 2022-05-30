@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
+from skimage.measure import EllipseModel
 
 
 class CenterExtracter:
@@ -398,6 +399,116 @@ class CenterExtracter:
         ref_image_np = plt.imread(ref_image)
         return np.maximum((ref_image_np / 255.0 - image / 255.0) * 255, 0)
 
+    def all_points(self, image, x=0, y=0, h=500, w=500, subtract=True, plot=True):
+        """
+        Returns all the points  of the drop.
+
+        Parameters
+        ----------
+        image : `str` or numpy.ndarray
+            Image to be processed
+        x : int
+            x coordinate of the crop
+        y : int
+            y coordinate of the crop
+        h : int
+            height of the crop
+        w : int
+            width of the crop
+
+        Returns
+        -------
+        xs : numpy.ndarray
+            x coordinates of the points
+        ys : numpy.ndarray
+            y coordinates of the points
+        """
+        x, y = (0, 0)
+        h, w = (500, 500)
+        img = self._read_image_(image)
+        if subtract:
+            img = self._subtract_image_(img)
+        img = self._threshold_(image=img)
+        img = self._crop_(img, x, y, h, w)
+
+        ys1 = np.nonzero(img.argmax(axis=1))[0]
+        xs1 = np.nonzero(img.argmax(axis=0))[0]
+        xs2 = img.argmax(axis=1)[ys1]
+        ys2 = img.argmax(axis=0)[xs1]
+
+        xs = np.concatenate((xs2, xs1), axis=0)
+        ys = np.concatenate((ys1, ys2), axis=0)
+
+        if plot:
+            plt.figure(figsize=(10, 10))
+            plt.imshow(img, cmap="gray")
+            plt.plot(xs, ys, "o")
+            plt.xlim(np.min(xs) - 5, np.max(xs) + 5)
+            plt.ylim(np.min(ys) - 5, np.max(ys) + 5)
+            plt.grid()
+            plt.show()
+        return xs, ys
+
+    def fit_ellipse(
+        self,
+        image,
+        crop_included=True,
+        x=0,
+        y=0,
+        h=500,
+        w=500,
+        subtract=True,
+        plot=True,
+        title="",
+    ):
+        """
+        Fits an ellipse to the drop.
+
+        Parameters
+        ----------
+        image : `str` or numpy.ndarray
+            Image to be processed
+
+        Returns
+        -------
+        (x, y) : tuple
+            center of the drop
+        (r1, r2) : tuple
+            radii of the drop
+        theta : float
+            angle of the drop
+        """
+        xs, ys = self.all_points(image, x, y, h, w, subtract=subtract, plot=False)
+        points = np.array([xs, ys]).T
+        ell = EllipseModel()
+        ell.estimate(points)
+        xc, yc, a, b, theta = ell.params
+
+        if crop_included:
+            xc += self.X
+            yc += self.Y
+        self.center = (int(xc), int(yc))
+        self.r1 = int(a)
+        self.r2 = int(b)
+
+        if plot:
+            t = np.linspace(0, 2 * np.pi, 100)
+            plt.imshow(self.image_final, cmap="gray")
+            plt.plot(xc - self.X + a * np.cos(t), yc - self.Y + b * np.sin(t))
+            plt.grid(color="lightgray", linestyle="--")
+            plt.scatter(-self.X + self.center[0], -self.Y + self.center[1], color="g")
+            plt.xlim([np.min(xs) - 5, np.max(xs) + 5])
+            plt.ylim([np.min(ys) - 5, np.max(ys) + 5])
+            plt.annotate(
+                f"{(self.center[0], self.center[1])}",
+                xy=(-self.X + self.center[0], -self.Y + self.center[1]),
+                xytext=(-self.X + self.center[0], -self.Y + self.center[1]),
+                color="r",
+            )
+            plt.title(title)
+            plt.show()
+        return self.center, (self.r1, self.r2), round(theta, 2)
+
     def get_center(
         self,
         image_path,
@@ -465,11 +576,10 @@ class CenterExtracter:
             # Stricting the image to the line
             image = self._stricting_(x, y)
         # calculating center
-        center, radius = self._center_and_radius_(
+        center, radii = self._center_and_radius_(
             image, crop_included=crop_included, reverse=reverse
         )
         if plot:
             self._plot_(title)
 
-        return radius, center
-
+        return radii, center
