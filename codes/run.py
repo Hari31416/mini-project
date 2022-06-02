@@ -1,8 +1,3 @@
-# Running this file will use all the three methods one by one to extract the center
-#  and other details of the images.
-
-import random
-import sys
 import os
 import matplotlib.pyplot as plt
 from extract_center import CenterExtracter
