@@ -7,7 +7,7 @@ from math import factorial
 import matplotlib
 
 plt.rcdefaults()
-
+#
 
 class Smoother:
     """
