@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.26)  15 JUN 2022 11:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.26)  15 JUN 2022 15:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -617,7 +617,7 @@ Package: ocgbase 2022/04/01 v0.21 support package for ocgx2.sty
 \l_mix_pbtn_box=\box82
 \g_mix_mbtncnt_int=\count354
 \mix@btn@dim=\dimen308
-) (C:\Users\harik\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewolverine.sty)
+) (C:\Users\harik\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeseahorse.sty)
 LaTeX Font Info:    Trying to load font information for OT1+pag on input line 16.
  (C:\Users\harik\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pag.fd
 File: ot1pag.fd 2001/06/04 font definitions for OT1/pag.
@@ -799,20 +799,15 @@ Package pdftex.def Info: 34.jpg  used on input line 36.
  [3
 
 ]
-File: 34.jpg Graphic file (type jpg)
-<use 34.jpg>
-Package pdftex.def Info: 34.jpg  used on input line 36.
-(pdftex.def)             Requested size: 94.69073pt x 59.18172pt.
- [4
-
-]
 LaTeX Font Info:    Font shape `OT1/pag/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/pag/m/sl' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/pag/m/it' in size <8> not available
 (Font)              Font shape `OT1/pag/m/sl' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/pag/m/it' in size <6> not available
 (Font)              Font shape `OT1/pag/m/sl' tried instead on input line 53.
- [5
+ [4
+
+] [5
 
 ] [6
 
@@ -824,10 +819,8 @@ LaTeX Font Info:    Font shape `OT1/pag/m/it' in size <6> not available
 
 ] [10
 
-] [11
-
 ]
-<cropped.png, id=339, 722.7pt x 361.35pt>
+<cropped.png, id=308, 722.7pt x 361.35pt>
 File: cropped.png Graphic file (type png)
 <use cropped.png>
 Package pdftex.def Info: cropped.png  used on input line 75.
@@ -837,30 +830,32 @@ Overfull \hbox (17.92212pt too wide) in paragraph at lines 75--75
  [] 
  []
 
-[12
+[11
 
  <./cropped.png>]
-<binary.png, id=368, 578.16pt x 289.08pt>
+<binary.png, id=337, 578.16pt x 289.08pt>
 File: binary.png Graphic file (type png)
 <use binary.png>
 Package pdftex.def Info: binary.png  used on input line 87.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
- [13
+ [12
 
  <./binary.png>]
-<small.png, id=398, 578.16pt x 289.08pt>
+<small.png, id=366, 578.16pt x 289.08pt>
 File: small.png Graphic file (type png)
 <use small.png>
 Package pdftex.def Info: small.png  used on input line 99.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
- [14
+ [13
 
  <./small.png>]
 File: small.png Graphic file (type png)
 <use small.png>
 Package pdftex.def Info: small.png  used on input line 99.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
- [15
+ [14
+
+] [15
 
 ] [16
 
@@ -868,41 +863,39 @@ Package pdftex.def Info: small.png  used on input line 99.
 
 ] [18
 
-] [19
-
 ]
-<method_poster.png, id=563, 482.30188pt x 479.29062pt>
+<method_poster.png, id=531, 482.30188pt x 479.29062pt>
 File: method_poster.png Graphic file (type png)
 <use method_poster.png>
 Package pdftex.def Info: method_poster.png  used on input line 116.
 (pdftex.def)             Requested size: 168.80818pt x 167.75423pt.
- [20
+ [19
 
  <./method_poster.png>]
-<problems1.png, id=593, 578.16pt x 289.08pt>
+<problems1.png, id=562, 578.16pt x 289.08pt>
 File: problems1.png Graphic file (type png)
 <use problems1.png>
 Package pdftex.def Info: problems1.png  used on input line 129.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
- [21
+ [20
 
  <./problems1.png>]
 File: problems1.png Graphic file (type png)
 <use problems1.png>
 Package pdftex.def Info: problems1.png  used on input line 129.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
- [22
+ [21
 
 ]
-<dc_poster.png, id=649, 488.32437pt x 355.3275pt>
+<dc_poster.png, id=618, 488.32437pt x 355.3275pt>
 File: dc_poster.png Graphic file (type png)
 <use dc_poster.png>
 Package pdftex.def Info: dc_poster.png  used on input line 139.
 (pdftex.def)             Requested size: 170.91608pt x 124.36647pt.
- [23
+ [22
 
  <./dc_poster.png>]
-<using_dc.png, id=679, 2168.1pt x 2168.1pt>
+<using_dc.png, id=648, 2168.1pt x 2168.1pt>
 File: using_dc.png Graphic file (type png)
 <use using_dc.png>
 Package pdftex.def Info: using_dc.png  used on input line 148.
@@ -911,34 +904,42 @@ Package pdftex.def Info: using_dc.png  used on input line 148.
 Overfull \vbox (13.68608pt too high) detected at line 148
  []
 
-[24
+[23
 
  <./using_dc.png>]
 LaTeX Font Info:    Font shape `OT1/pag/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/pag/db/n' tried instead on input line 161.
-<subtracted.png, id=708, 578.16pt x 289.08pt>
+<subtracted.png, id=677, 578.16pt x 289.08pt>
 File: subtracted.png Graphic file (type png)
 <use subtracted.png>
 Package pdftex.def Info: subtracted.png  used on input line 161.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
- [25
+ [24
 
  <./subtracted.png>]
 File: subtracted.png Graphic file (type png)
 <use subtracted.png>
 Package pdftex.def Info: subtracted.png  used on input line 161.
 (pdftex.def)             Requested size: 231.2599pt x 115.62994pt.
+ [25
+
+]
+<ref_image.jpg, id=734, 72.83905pt x 45.52441pt>
+File: ref_image.jpg Graphic file (type jpg)
+<use ref_image.jpg>
+Package pdftex.def Info: ref_image.jpg  used on input line 170.
+(pdftex.def)             Requested size: 291.35547pt x 182.09717pt.
  [26
 
-] [27
+ <./ref_image.jpg>] [27
 
 ] [28
 
 ]
-<using_si.png, id=819, 2168.1pt x 2168.1pt>
+<using_si.png, id=815, 2168.1pt x 2168.1pt>
 File: using_si.png Graphic file (type png)
 <use using_si.png>
-Package pdftex.def Info: using_si.png  used on input line 176.
+Package pdftex.def Info: using_si.png  used on input line 185.
 (pdftex.def)             Requested size: 216.8227pt x 216.8227pt.
  [29
 
@@ -947,21 +948,21 @@ Package pdftex.def Info: using_si.png  used on input line 176.
 ] [31
 
 ]
-<all_points.png, id=902, 389.95688pt x 350.81062pt>
+<all_points.png, id=898, 389.95688pt x 350.81062pt>
 File: all_points.png Graphic file (type png)
 <use all_points.png>
-Package pdftex.def Info: all_points.png  used on input line 195.
+Package pdftex.def Info: all_points.png  used on input line 204.
 (pdftex.def)             Requested size: 194.97795pt x 175.40488pt.
  [32
 
  <./all_points.png>]
-<ellipse_fit.png, id=930, 227.34938pt x 405.01312pt>
+<ellipse_fit.png, id=926, 227.34938pt x 405.01312pt>
 File: ellipse_fit.png Graphic file (type png)
 <use ellipse_fit.png>
-Package pdftex.def Info: ellipse_fit.png  used on input line 214.
+Package pdftex.def Info: ellipse_fit.png  used on input line 223.
 (pdftex.def)             Requested size: 113.67441pt x 202.50606pt.
 
-Overfull \vbox (1.5652pt too high) detected at line 214
+Overfull \vbox (1.5652pt too high) detected at line 223
  []
 
 [33
@@ -969,19 +970,19 @@ Overfull \vbox (1.5652pt too high) detected at line 214
  <./ellipse_fit.png>]
 File: ellipse_fit.png Graphic file (type png)
 <use ellipse_fit.png>
-Package pdftex.def Info: ellipse_fit.png  used on input line 214.
+Package pdftex.def Info: ellipse_fit.png  used on input line 223.
 (pdftex.def)             Requested size: 113.67441pt x 202.50606pt.
 
-Overfull \vbox (1.5652pt too high) detected at line 214
+Overfull \vbox (1.5652pt too high) detected at line 223
  []
 
 [34
 
 ]
-<using_ap.png, id=984, 2168.1pt x 2168.1pt>
+<using_ap.png, id=980, 2168.1pt x 2168.1pt>
 File: using_ap.png Graphic file (type png)
 <use using_ap.png>
-Package pdftex.def Info: using_ap.png  used on input line 224.
+Package pdftex.def Info: using_ap.png  used on input line 233.
 (pdftex.def)             Requested size: 151.7825pt x 151.7825pt.
  [35
 
@@ -990,26 +991,26 @@ Package pdftex.def Info: using_ap.png  used on input line 224.
 ] [37
 
 ]
-<x_y_using_dc.png, id=1069, 1156.32pt x 1156.32pt>
+<x_y_using_dc.png, id=1065, 1156.32pt x 1156.32pt>
 File: x_y_using_dc.png Graphic file (type png)
 <use x_y_using_dc.png>
-Package pdftex.def Info: x_y_using_dc.png  used on input line 242.
+Package pdftex.def Info: x_y_using_dc.png  used on input line 251.
 (pdftex.def)             Requested size: 231.2599pt x 231.2599pt.
  [38
 
  <./x_y_using_dc.png>]
-<x_y_using_si.png, id=1097, 1156.32pt x 1156.32pt>
+<x_y_using_si.png, id=1093, 1156.32pt x 1156.32pt>
 File: x_y_using_si.png Graphic file (type png)
 <use x_y_using_si.png>
-Package pdftex.def Info: x_y_using_si.png  used on input line 250.
+Package pdftex.def Info: x_y_using_si.png  used on input line 259.
 (pdftex.def)             Requested size: 231.2599pt x 231.2599pt.
  [39
 
  <./x_y_using_si.png>]
-<x_y_using_ap.png, id=1125, 1156.32pt x 1156.32pt>
+<x_y_using_ap.png, id=1121, 1156.32pt x 1156.32pt>
 File: x_y_using_ap.png Graphic file (type png)
 <use x_y_using_ap.png>
-Package pdftex.def Info: x_y_using_ap.png  used on input line 258.
+Package pdftex.def Info: x_y_using_ap.png  used on input line 267.
 (pdftex.def)             Requested size: 231.2599pt x 231.2599pt.
  [40
 
@@ -1029,17 +1030,17 @@ Package pdftex.def Info: x_y_using_ap.png  used on input line 258.
 
  (ppt.aux) ) 
 Here is how much of TeX's memory you used:
- 26541 strings out of 478582
- 538783 string characters out of 2844344
+ 26513 strings out of 478582
+ 538102 string characters out of 2844344
  788783 words of memory out of 3000000
- 44043 multiletter control sequences out of 15000+600000
+ 44018 multiletter control sequences out of 15000+600000
  499115 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,515b,658s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><C:/Users/harik/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagko8a.pfb>
-Output written on ppt.pdf (42 pages, 12481345 bytes).
+Output written on ppt.pdf (42 pages, 12706732 bytes).
 PDF statistics:
- 1372 PDF objects out of 1440 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
- 415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1358 PDF objects out of 1440 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 

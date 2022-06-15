@@ -6,14 +6,14 @@
 \beamer@subsectionintoc {2}{1}{The Problem}{3}{0}{2}
 \beamer@subsectionintoc {2}{2}{Background Information}{3}{0}{2}
 \beamer@subsubsectionintoc {2}{2}{1}{How Computer Stores Image?}{3}{0}{2}
-\beamer@sectionintoc {3}{Introduction}{4}{0}{3}
-\beamer@subsectionintoc {3}{1}{The Problem}{4}{0}{3}
-\beamer@subsectionintoc {3}{2}{Background Information}{4}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{1}{How Computer Stores Image?}{4}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{2}{Various Type of Images}{5}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{3}{Various Type of Images}{6}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{4}{Various Type of Images}{7}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{5}{Various Type of Images}{8}{0}{3}
+\beamer@subsubsectionintoc {2}{2}{2}{Various Type of Images}{4}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{3}{Various Type of Images}{5}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{4}{Various Type of Images}{6}{0}{2}
+\beamer@subsubsectionintoc {2}{2}{5}{Various Type of Images}{7}{0}{2}
+\beamer@sectionintoc {3}{The Solution}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Preprocessing}{8}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{1}{Loading Image}{8}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{2}{Cropping The Image}{8}{0}{3}
 \beamer@sectionintoc {4}{The Solution}{9}{0}{4}
 \beamer@subsectionintoc {4}{1}{Preprocessing}{9}{0}{4}
 \beamer@subsubsectionintoc {4}{1}{1}{Loading Image}{9}{0}{4}
@@ -22,29 +22,25 @@
 \beamer@subsectionintoc {5}{1}{Preprocessing}{10}{0}{5}
 \beamer@subsubsectionintoc {5}{1}{1}{Loading Image}{10}{0}{5}
 \beamer@subsubsectionintoc {5}{1}{2}{Cropping The Image}{10}{0}{5}
-\beamer@sectionintoc {6}{The Solution}{11}{0}{6}
-\beamer@subsectionintoc {6}{1}{Preprocessing}{11}{0}{6}
-\beamer@subsubsectionintoc {6}{1}{1}{Loading Image}{11}{0}{6}
-\beamer@subsubsectionintoc {6}{1}{2}{Cropping The Image}{11}{0}{6}
-\beamer@subsubsectionintoc {6}{1}{3}{Thresholding Image}{13}{0}{6}
+\beamer@subsubsectionintoc {5}{1}{3}{Thresholding Image}{12}{0}{5}
+\beamer@sectionintoc {6}{The Main Method}{13}{0}{6}
 \beamer@sectionintoc {7}{The Main Method}{14}{0}{7}
-\beamer@sectionintoc {8}{The Main Method}{15}{0}{8}
-\beamer@subsectionintoc {8}{1}{Working of the Method}{16}{0}{8}
-\beamer@subsectionintoc {8}{2}{Working of the Method}{17}{0}{8}
-\beamer@subsectionintoc {8}{3}{Working of the Method}{18}{0}{8}
-\beamer@subsectionintoc {8}{4}{Working of the Method}{19}{0}{8}
-\beamer@subsectionintoc {8}{5}{Working of the Method}{20}{0}{8}
+\beamer@subsectionintoc {7}{1}{Working of the Method}{15}{0}{7}
+\beamer@subsectionintoc {7}{2}{Working of the Method}{16}{0}{7}
+\beamer@subsectionintoc {7}{3}{Working of the Method}{17}{0}{7}
+\beamer@subsectionintoc {7}{4}{Working of the Method}{18}{0}{7}
+\beamer@subsectionintoc {7}{5}{Working of the Method}{19}{0}{7}
+\beamer@sectionintoc {8}{Problems With The Main Method}{20}{0}{8}
 \beamer@sectionintoc {9}{Problems With The Main Method}{21}{0}{9}
 \beamer@sectionintoc {10}{Problems With The Main Method}{22}{0}{10}
 \beamer@sectionintoc {11}{Problems With The Main Method}{23}{0}{11}
-\beamer@sectionintoc {12}{Problems With The Main Method}{24}{0}{12}
+\beamer@sectionintoc {12}{More Robust Methods}{24}{0}{12}
 \beamer@sectionintoc {13}{More Robust Methods}{25}{0}{13}
-\beamer@sectionintoc {14}{More Robust Methods}{26}{0}{14}
-\beamer@sectionintoc {15}{Subtracting the Background}{27}{0}{15}
-\beamer@sectionintoc {16}{Subtracting the Background}{28}{0}{16}
-\beamer@sectionintoc {17}{Fitting an Ellipse}{30}{0}{17}
-\beamer@sectionintoc {18}{Fitting an Ellipse}{31}{0}{18}
-\beamer@sectionintoc {19}{Preliminary Analysis}{36}{0}{19}
-\beamer@sectionintoc {20}{Preliminary Analysis}{37}{0}{20}
-\beamer@sectionintoc {21}{What Next?}{41}{0}{21}
-\beamer@sectionintoc {22}{What Next?}{42}{0}{22}
+\beamer@sectionintoc {14}{Subtracting the Background}{27}{0}{14}
+\beamer@sectionintoc {15}{Subtracting the Background}{28}{0}{15}
+\beamer@sectionintoc {16}{Fitting an Ellipse}{30}{0}{16}
+\beamer@sectionintoc {17}{Fitting an Ellipse}{31}{0}{17}
+\beamer@sectionintoc {18}{Preliminary Analysis}{36}{0}{18}
+\beamer@sectionintoc {19}{Preliminary Analysis}{37}{0}{19}
+\beamer@sectionintoc {20}{What Next?}{41}{0}{20}
+\beamer@sectionintoc {21}{What Next?}{42}{0}{21}
