@@ -6,11 +6,11 @@
 \usepackage{bookman}
 \usepackage{bookmark}
 \usepackage{media9}
-% \usetheme{Berkeley}
+% \usetheme{Madrid}
 \definecolor{ginger}{rgb}{0.69, 0.4, 0.0}
-\usecolortheme{wolverine}
-\title{Presentation}
-\subtitle{Drop on Thin Film}
+\usecolortheme{seahorse}
+\title{Drop on Thin Film}
+% \subtitle{}
 \institute[IITD]{Indian Institute of Technology, Delhi}
 \author{Kulwinder Kaur, Harikesh Kushwaha}
 \begin{document}
@@ -29,7 +29,7 @@
         \item <2-> \textbf{Background Information}
               \begin{itemize}
                   \subsubsection{How Computer Stores Image?}
-                  \item <3-> \textbf{How Computer Stores Image?}\\
+                  \item <2-> \textbf{How Computer Stores Image?}\\
                         Every image is made up of pixels. These pixels are stored in the form of an array with the shape \textcolor{blue}{[Height, Width, Colour Channel]}.Each of the pixels that represents an image stored inside a computer has a pixel value which describes how bright that pixel is, and/or what color it should be.
               \end{itemize}
     \end{enumerate}
@@ -44,7 +44,7 @@
               \begin{itemize}
                   \item <2-> Colour Image\\
                         Having 3 or 4 colour channels.
-                  \item <3-> Grey Image\\
+                  \item <3-> Greyscale Image\\
                         Having a single colour channel, hence the name grayscale.
                   \item <4-> Binary Image\\
                         Having a single colour channel. Also, the value of pixels are either 0 or 1.
@@ -101,9 +101,9 @@
     \frametitle{The Main Method}
     \subsection{Working of the Method}
     \begin{itemize}
-        \item <1-> The the position of the first such pixel will give the top-most point of the drop and the last such pixel will give the bottom-most point of the drop.
+        \item <1-> The position of the first such pixel will give the top-most point of the drop and the last such pixel will give the bottom-most point of the drop.
         \item <2-> Loop through the columnss and find all the black pixels for each columns.
-        \item <3-> The the position of the first such pixel will give the left-most point of the drop and the last such pixel will give the right-most point of the drop.
+        \item <3-> The position of the first such pixel will give the left-most point of the drop and the last such pixel will give the right-most point of the drop.
         \item <4-> Once we have the top-most, bottom-most, left-most and right-most points of the drop, we can find the center as well as the horizontal and vertical radii of the drop.
     \end{itemize}
 \end{frame}
@@ -131,7 +131,7 @@
     \frametitle{Problems With The Main Method}
     \section{Problems With The Main Method}
     \small
-    The second problem can be solved partially by using the dynamic cropping. In this method, we decide which portion of the image to crop on the basis of the center of the drop in previous image. We define a height and width and calculate the bouning box for the crop. Here is an animation showing the same.\\
+    The second problem can be solved partially by using the dynamic cropping. In this method, we decide which portion of the image to crop on the basis of the center of the drop in previous image. We define a height and width and calculate the bounding box for the crop. Here is an animation showing the same.\\
     \centering
     \movie[externalviewer, borderwidth=1pt]{\includegraphics[scale=0.35]{dc_poster.png}}{dynamic_cropping.mp4}\\
     \small
@@ -151,12 +151,21 @@
     \section{More Robust Methods}
     \Large \textbf{Subtracting The Background}\\
     \small
-    We saw that the dynamic cropping method is not robust enough. The problem arised because the needle and the thin film in the image acts as noise which our method fails to detect. To overcome this problem we subtracted the image in consideration with a reference image.\\
+    We saw that the dynamic cropping method is not robust enough. The problem arises because the needle and the thin film in the image acts as noise which our method fails to detect. To overcome this problem we subtracted the image in consideration with a reference image.\\
     \onslide<2->
     \begin{figure}
         \centering
         \includegraphics[scale=0.4]{subtracted.png}
         \caption[]{Original and Subtracted Image}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Subtracting The Background}
+    Here is the reference image we used.\\
+    \begin{figure}
+        \centering
+        \includegraphics[scale=4]{ref_image.jpg}
+        \caption[]{The Reference Image}
     \end{figure}
 \end{frame}
 \begin{frame}
@@ -179,9 +188,9 @@
     \section{Fitting an Ellipse}
     \begin{enumerate}
         \item <1-> \textbf{Motivation}\\
-              If we see the animation of the drop falling, we'll notice that the drop is oscillating and rotating. We wanted to see whether we can catch this rotation using some method. This was the one reason we decided to use the ellipse fitting method. Another reason was to further increase the accuracy of the center extracted.
+              If we see the animation of the drop falling, we'll notice that the drop is oscillating and rotating. We wanted to see whether we can catch this rotation using some method. This was one of the main reasons why we decided to use the ellipse fitting method. Another reason was to further increase the accuracy of the center extracted.
         \item <2-> \textbf{Determining the Coordiantes}\\
-              First step was to determine the coordinates of all the points which form the 'circumference' of the drop. This was determined by looping through the rows and columns and finding all the white pixels, which are the points on the circumference of the drop.
+              First step was to determine the coordinates of all the points which form the 'circumference' of the drop. This was determined by looping through the rows and columns and finding all the balck pixels, which are the points on the circumference of the drop.
     \end{enumerate}
 \end{frame}
 \begin{frame}
@@ -215,7 +224,7 @@
 \begin{frame}
     \frametitle{Fitting an Ellipse}
     \small
-    Though we were not able to infer the roation of the drop, this method works better than the previous methods; in a sense that the center determined using this are more accurate. Here are some samples.
+    Though we were not able to infer the rotation of the drop, this method works better than the previous methods; in a sense that the center determined using this are more accurate. Here are some samples.
     \begin{figure}
         \centering
         \includegraphics[scale=0.07]{using_ap.png}
