@@ -334,7 +334,7 @@ class CenterExtracter:
         self.radii = (r1, r2)
         return (x, y), (r1, r2)
 
-    def _show_image_(self, image, title="", binary=False, threshold=110):
+    def _show_image_(self, image, title="", binary=False, threshold=110, filename=""):
         """
         Shows the image.
 
@@ -351,6 +351,8 @@ class CenterExtracter:
         plt.imshow(image, cmap="gray")
         plt.grid(True)
         plt.title(title)
+        if filename:
+            plt.savefig(filename)
         plt.show()
 
     def _plot_(self, title=""):
@@ -379,6 +381,36 @@ class CenterExtracter:
         plt.grid()
         plt.title(title)
         plt.show()
+
+    def plot_bounding_box(self, center, radius=12, thres=5, file_name=""):
+        plt.figure(figsize=(10, 10))
+        plt.imshow(self.image, cmap="gray")
+        plt.hlines(
+            center[1] - radius - thres,
+            center[0] - radius - thres,
+            center[0] + radius + thres,
+            color="r",
+        )
+        plt.hlines(
+            center[1] + radius + thres,
+            center[0] - radius - thres,
+            center[0] + radius + thres,
+            color="r",
+        )
+        plt.vlines(
+            center[0] - radius - thres,
+            center[1] - radius - thres,
+            center[1] + radius + thres,
+            color="r",
+        )
+        plt.vlines(
+            center[0] + radius + thres,
+            center[1] - radius - thres,
+            center[1] + radius + thres,
+            color="r",
+        )
+        plt.title(file_name.split("/")[-1])
+        plt.savefig(file_name)
 
     def _subtract_image_(self, image, ref_image="ref_image.jpg"):
         """
@@ -524,6 +556,8 @@ class CenterExtracter:
         threshold=110,
         crop_included=True,
         reverse=False,
+        boundary_box=False,
+        save_dir=None,
     ):
         """
         Returns the center of the drop.
@@ -581,5 +615,16 @@ class CenterExtracter:
         )
         if plot:
             self._plot_(title)
+
+        if boundary_box:
+            file_name = image_path.split("/")[-1]
+            file_name = file_name.split(".")[0]
+            if len(file_name) == 1:
+                file_name = "00" + file_name
+            elif len(file_name) == 2:
+                file_name = "0" + file_name
+
+            file_name = save_dir + "/" + file_name + ".png"
+            self.plot_bounding_box(center, radius=14, file_name=file_name)
 
         return radii, center
