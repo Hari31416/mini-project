@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 from extract_center import CenterExtracter
 import pandas as pd
+import tqdm
 
 plt.rcdefaults()
 
@@ -66,7 +67,7 @@ class Run:
         images = [f"{self.path}/{image}" for image in images]
         return images
 
-    def save_to_csv(self, method, path=None, include_crop=False):
+    def save_to_csv(self, method="ap", file_name=None, include_crop=False):
         """
         Writes the centers and radii to a csv file.
 
@@ -78,7 +79,7 @@ class Run:
                 1. dynamic_cropping (dc)
                 2. subtracting_images (si)
                 3. all_poins (ap)
-        path : str
+        file_name : str
             The path of the file to be written.
         include_crop : bool
             Whether to include the crop coordinates in the csv file. Should be used when the method is "dc"
@@ -88,8 +89,11 @@ class Run:
         df : pandas.DataFrame
             The dataframe containing the centers and radii.
         """
-        if path is None:
-            path = f"centers_using_{method}.csv"
+        if file_name is None:
+            file_name = f"centers_using_{method}.csv"
+        else:
+            if not file_name.endswith(".csv"):
+                file_name = file_name + ".csv"
 
         method_dict = {
             "dc": (self.centers_dc, self.radii_dc),
@@ -122,7 +126,7 @@ class Run:
         else:
             df = pd.merge(df1, df2, on="id")
 
-        df.to_csv(os.path.join(self.save_path, path), index=False)
+        df.to_csv(os.path.join(self.save_path, file_name), index=False)
         return df
 
     def dynamic_cropping_one_step(
@@ -197,7 +201,7 @@ class Run:
         positions_2=(75, 100),
         positions_3=(106, 155),
         save=True,
-        file_name="dc",
+        file_name=None,
         **kwargs,
     ):
         """
@@ -234,13 +238,13 @@ class Run:
         self.dynamic_cropping_one_step(*crop_3, *positions_3, **kwargs)
         if save:
             print("Saving to csv...")
-            df = self.save_to_csv(file_name, include_crop=True)
+            df = self.save_to_csv(method="dc", file_name=file_name, include_crop=True)
             print("Done!")
             return df
         else:
             return self.centers_si, self.radii_si
 
-    def subtracting_images(self, h=500, w=500, save=True, file_name="si", **kwargs):
+    def subtracting_images(self, h=500, w=500, save=True, file_name=None, **kwargs):
         """
         Uses subtracting images method to extract centers of the drops.
 
@@ -267,7 +271,7 @@ class Run:
         print("Getting list of images...")
         images = self.get_images()
         print("Extracting data from images...")
-        for img in images:
+        for img in tqdm.tqdm(images, desc="Extracting data from images"):
             if img.endswith(".jpg"):
                 try:
                     (r1, r2), (x, y) = self.c.get_center(img, h=500, w=500, **kwargs)
@@ -278,13 +282,15 @@ class Run:
                     continue
         if save:
             print("Saving to csv...")
-            df = self.save_to_csv(file_name, include_crop=False)
+            df = self.save_to_csv(method="si", file_name=file_name, include_crop=False)
             print("Done!")
             return df
         else:
             return self.centers_si, self.radii_si
 
-    def all_points(self, save=True, file_name="ap", **kwargs):
+    def all_points(
+        self, save=True, method="ap", file_name=None, raise_error=False, **kwargs
+    ):
         """
         Uses subtracting images method to extract centers of the drops.
 
@@ -297,7 +303,7 @@ class Run:
         save : bool
             Whether to save the centers and radii to a csv file.
         kwargs : dict
-            The keyword arguments to be passed to the `get_center` method.
+            The keyword arguments to be passed to the `fit_ellipse` method.
 
         Returns
         -------
@@ -313,7 +319,7 @@ class Run:
         print("Getting list of images...")
         images = self.get_images()
         print("Extracting data from images...")
-        for img in images:
+        for img in tqdm.tqdm(images, desc="Extracting data from images"):
             if img.endswith(".jpg"):
                 try:
                     (x, y), (a, b), theta = self.c.fit_ellipse(img, **kwargs)
@@ -321,11 +327,16 @@ class Run:
                     self.radii_ap[img] = (a, b)
                     self.thetas_ap[img] = theta
                 except Exception as e:
-                    print("Error on: ", img)
-                    continue
+                    if raise_error:
+                        raise e
+                    else:
+                        print("Error on: ", img)
+                        continue
         if save:
             print("Saving to csv...")
-            df = self.save_to_csv(file_name, include_crop=False)
+            df = self.save_to_csv(
+                method=method, file_name=file_name, include_crop=False
+            )
             print("Done!")
             return df
         else:

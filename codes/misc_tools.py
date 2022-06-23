@@ -310,7 +310,7 @@ class Plotter:
             plt.savefig(save_dir)
         plt.show()
 
-    def plot_one(self, col1, col2=None, title="", filename=None, smooth=True):
+    def plot_one(self, col1, col2=None, title="", filename=None, smooth=True, scatter=None):
         """
         Plots two columns or one column with time
 
@@ -332,16 +332,30 @@ class Plotter:
         None
         """
         if smooth:
+            if scatter is None:
+                scatter = False
             if self.smoothe_df is None:
                 self.smoothe_df = self.s.smoothen()
             df = self.smoothe_df.copy()
         else:
-            df = self.df.copy()
+            if scatter is None:
+                scatter = True
+            if isinstance(self.df, str):
+                df = pd.read_csv(self.df)
+            else:
+                df = self.df.copy()
 
         plt.figure(figsize=(10, 10))
         if col2 is None:
-            plt.plot(df[col1])
-            col2 = "Time"
+            x_values = list(range(len(df[col1])))
+            col2 = "time"
+        else:
+            x_values = df[col2]
+        if scatter:
+            plt.scatter(x_values, df[col1])
+        else:
+            plt.plot(x_values, df[col1])
+        
         plt.title(title)
         plt.xlabel(col2)
         plt.ylabel(col1)
@@ -360,6 +374,7 @@ class Plotter:
         minus_y=True,
         file_name=None,
         smooth=True,
+        scatter=None,
     ):
         """
         Plots two varibales in the dataframe with themselves and with time.
@@ -380,12 +395,18 @@ class Plotter:
         font = {"size": 18}
         matplotlib.rc("font", **font)
         if smooth:
+            if scatter is None:
+                scatter = False
             if self.smoothe_df is None:
                 self.smoothe_df = self.s.smoothen()
             df = self.smoothe_df.copy()
         else:
+            if scatter is None:
+                scatter = True
             if isinstance(self.df, str):
                 df = pd.read_csv(self.df)
+            else:
+                df = self.df.copy()
 
         if minus_y:
             df["y"] = -df["y"]
@@ -396,17 +417,26 @@ class Plotter:
         ax2 = plt.subplot2grid((2, 2), (0, 1), colspan=1)
         ax3 = plt.subplot2grid((2, 2), (1, 0), colspan=2)
 
-        ax1.plot(df[cols[1]])
+        if not scatter:
+            ax1.plot(df[cols[1]])
+        else:
+            ax1.scatter(list(range(len(df[cols[1]]))), df[cols[1]])
         ax1.set_title(f"{cols[1]} vs time")
         ax1.set_xlabel("time")
         ax1.set_ylabel(cols[1])
 
-        ax2.plot(df[cols[0]])
+        if not scatter:
+            ax2.plot(df[cols[0]])
+        else:
+            ax2.scatter(list(range(len(df[cols[1]]))), df[cols[0]])
         ax2.set_title(f"{cols[0]} vs time")
         ax2.set_xlabel("time")
         ax2.set_ylabel(cols[0])
 
-        ax3.plot(df[cols[0]], df[cols[1]])
+        if not scatter:
+            ax3.plot(df[cols[0]], df[cols[1]])
+        else:
+            ax3.scatter(df[cols[0]], df[cols[1]])
         ax3.set_title(f"{cols[0]} vs {cols[1]}")
         ax3.set_xlabel(cols[0])
         ax3.set_ylabel(cols[1])
