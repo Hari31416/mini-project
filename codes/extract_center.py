@@ -401,7 +401,7 @@ class CenterExtracter:
         ref_image_np = plt.imread(ref_image)
         return np.maximum((ref_image_np / 255.0 - image / 255.0) * 255, 0)
 
-    def _all_points_binary(self, img, plot=True):
+    def _all_points_binary(self, img, threshold=110):
         """
         Returns all the points  of the drop.
 
@@ -409,8 +409,8 @@ class CenterExtracter:
         ----------
         image : numpy.ndarray
             Image to be processed
-        plot : bool
-            if True, the image is plotted
+        threshold : int
+            threshold of the image
 
         Returns
         -------
@@ -419,7 +419,7 @@ class CenterExtracter:
         ys : numpy.ndarray
             y coordinates of the points
         """
-
+        img = self._threshold(image=img, threshold=threshold)
         ys1 = np.nonzero(img.argmax(axis=1))[0]
         xs1 = np.nonzero(img.argmax(axis=0))[0]
         xs2 = img.argmax(axis=1)[ys1]
@@ -427,19 +427,10 @@ class CenterExtracter:
 
         xs = np.concatenate((xs2, xs1), axis=0)
         ys = np.concatenate((ys1, ys2), axis=0)
-
-        if plot:
-            plt.figure(figsize=(10, 10))
-            plt.imshow(img, cmap="gray")
-            plt.plot(xs, ys, "o")
-            plt.xlim(np.min(xs) - 5, np.max(xs) + 5)
-            plt.ylim(np.min(ys) - 5, np.max(ys) + 5)
-            plt.grid()
-            plt.show()
         return xs, ys
 
     def _get_edges(
-        self, array, kernel="all", x=None, y=None, thres=0.6, min_array_value=50
+        self, array, kernel="gaussian_y", x=None, y=None, thres=0.6, min_array_value=110
     ):
         """
         Gets the coordinates for the edge of a row or column of the image array
@@ -454,6 +445,7 @@ class CenterExtracter:
                 "gaussian" : gaussian filter
                 "diff" : differential filter
                 "y": No filters, just using interpolation
+                "gaussian_y": gaussian filter and interpolation
                 "all" : All three kernels
         x : int
             column index of the array
@@ -533,7 +525,7 @@ class CenterExtracter:
                 point2 = (x, round(point[0], 1))
         return point1, point2
 
-    def _get_points(self, img, kernel="all", thres=0.6, min_array_value=50, plot=False):
+    def _get_points(self, img, kernel="gaussian_y", thres=0.6, min_array_value=50):
         """
         Uses the `get_edges` function to get the coordinates for the edge of the drop
 
@@ -541,14 +533,13 @@ class CenterExtracter:
         ----------
         img : numpy.ndarray
             Image to be processed
-        plot: bool
-            if True, the image is plotted
         method : str
             method to be used for the edge detection.
             Available methods:
                 "gaussian" : gaussian filter
                 "diff" : differential filter
                 "y": No filters, just using interpolation
+                "gaussian_y": gaussian filter and interpolation
                 "all" : All three methods
         thres : float
             threshold for the edge detection, used in the `peakutils` class
@@ -600,10 +591,6 @@ class CenterExtracter:
 
         xs = np.array([p[0] for p in points])
         ys = np.array([p[1] for p in points])
-
-        if plot:
-            plt.imshow(-img, cmap="gray")
-            plt.scatter(xs, ys, s=5, c="r")
         return xs, ys
 
     def _drop_points(self, xs, ys, drop_points=5):
@@ -643,7 +630,7 @@ class CenterExtracter:
         thres=0.6,
         min_array_value=50,
         plot=False,
-        kernel="all",
+        kernel="gaussian_y",
         drop_points=5,
     ):
         """
@@ -665,6 +652,7 @@ class CenterExtracter:
                 "gaussian" : gaussian filter
                 "diff" : differential filter
                 "y": No filters, just using interpolation
+                "gaussian_y": gaussian filter and interpolation
                 "all" : All three kernels
         drop_points : int
             number of points to be dropped
@@ -696,8 +684,9 @@ class CenterExtracter:
         plot=False,
         title="",
         drop_points=5,
-        kernel="all",
-        min_array_value=50,
+        kernel="gaussian_y",
+        min_array_value=110,
+        threshold=110,
     ):
         """
         Fits an ellipse to the drop.
@@ -706,6 +695,36 @@ class CenterExtracter:
         ----------
         image : `str` or numpy.ndarray
             Image to be processed
+        crop_included : bool
+            if True, the crop is included in the center of the drop
+        binary : bool
+            if True, the image is binarized
+        x : int
+            x coordinate to use to crop
+        y : int
+            y coordinate to use to crop
+        h : int
+            height to use to crop
+        w : int
+            width to use to crop
+        subtract : bool
+            if True, the image is subtracted from the reference image
+        plot : bool
+            if True, the image is plotted
+        title : str
+            title of the plot
+        drop_points : int
+            number of points to be dropped while getting the points of the circumference
+        kernel : str
+            kernel to be used for the edge detection.
+            Available kernels:
+            "gaussian" : gaussian filter
+            "diff" : differential filter
+            "y": No filters, just using interpolation
+            "gaussian_y": gaussian filter and interpolation
+            "all" : All three kernels
+        min_array_value : int
+            minimum value of the array to be considered as an part of the drop.
 
         Returns
         -------
@@ -721,12 +740,11 @@ class CenterExtracter:
             img = self._subtract_image(img)
         img = self._crop(img, x, y, h, w)
         if binary:
-            xs, ys = self._all_points_binary(img, plot=plot)
+            xs, ys = self._all_points_binary(img, threshold=threshold)
         else:
             xs, ys = self._all_points_grayscale(
                 img,
                 thres=0.6,
-                plot=plot,
                 kernel=kernel,
                 drop_points=drop_points,
                 min_array_value=min_array_value,
@@ -749,6 +767,7 @@ class CenterExtracter:
             plt.plot(xc - self.X + a * np.cos(t), yc - self.Y + b * np.sin(t))
             plt.grid(color="lightgray", linestyle="--")
             plt.scatter(-self.X + self.center[0], -self.Y + self.center[1], color="g")
+            plt.scatter(xs, ys, s=5, c="r")
             plt.xlim([np.min(xs) - 5, np.max(xs) + 5])
             plt.ylim([np.min(ys) - 5, np.max(ys) + 5])
             plt.annotate(
