@@ -1,0 +1,6 @@
+### h16_short.tif
+### First Frame ID: 000.jpg
+### Last Frame ID: 
+### Contact Frame ID: 
+### Leave Frame ID: 
+### Angle: 25.017
