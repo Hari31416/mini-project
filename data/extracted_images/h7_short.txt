@@ -1,6 +1,6 @@
 ### h7_short.tif
-### First Frame ID: 000.jpg
+### First Frame ID: 006.jpg
 ### Last Frame ID: 
-### Contact Frame ID: 
+### Contact Frame ID: 059.jpg
 ### Leave Frame ID: 
 ### Angle: 25.017
