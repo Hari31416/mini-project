@@ -1,4 +1,5 @@
 import os
+from tabnanny import verbose
 import matplotlib.pyplot as plt
 from extract_center import CenterExtracter
 import pandas as pd
@@ -8,7 +9,7 @@ plt.rcdefaults()
 
 
 class Run:
-    def __init__(self, path=os.curdir, save_path=os.curdir):
+    def __init__(self, path=os.curdir, save_path=os.curdir, **centerextracter):
         """
         The class uses all the three methods developed to extract centers of the drops from images.
 
@@ -20,7 +21,7 @@ class Run:
         """
         self.path = path
         self.save_path = save_path
-        self.c = CenterExtracter()
+        self.c = CenterExtracter(**centerextracter)
         self.centers_dc = {}
         self.radii_dc = {}
         self.centers_si = {}
@@ -28,6 +29,14 @@ class Run:
         self.centers_ap = {}
         self.radii_ap = {}
         self.thetas_ap = {}
+
+    def get_informations(self):
+        """
+        Gets informations about that particular sequence of images.
+        """
+        text_file = self.path + ".txt"
+        with open(text_file, "r") as f:
+            print(f.read())
 
     def rename_images(self):
         """
@@ -66,6 +75,15 @@ class Run:
         images = sorted(images, key=lambda x: int(x.split(".")[0]))
         images = [f"{self.path}/{image}" for image in images]
         return images
+
+    def _set_ref_image(self, img_num=-10):
+        """
+        Sets the reference image for the `CenterExtracter` class.
+        """
+        images = self.get_images()
+        last_image = images[img_num]
+        self.c.ref_image = last_image
+        return None
 
     def save_to_csv(self, method="ap", file_name=None, include_crop=False):
         """
@@ -279,6 +297,8 @@ class Run:
                     self.radii_si[img] = (r1, r2)
                 except:
                     print("Error on: ", img)
+                    self.centers_si[img] = (None, None)
+                    self.radii_si[img] = (None, None)
                     continue
         if save:
             print("Saving to csv...")
@@ -289,7 +309,14 @@ class Run:
             return self.centers_si, self.radii_si
 
     def all_points(
-        self, save=True, method="ap", file_name=None, raise_error=False, **kwargs
+        self,
+        save=True,
+        method="ap",
+        file_name=None,
+        raise_error=False,
+        num_images=None,
+        verbose=True,
+        **kwargs,
     ):
         """
         Uses subtracting images method to extract centers of the drops.
@@ -319,6 +346,8 @@ class Run:
         print("Getting list of images...")
         images = self.get_images()
         print("Extracting data from images...")
+        if num_images is not None:
+            images = images[:num_images]
         for img in tqdm.tqdm(images, desc="Extracting data from images"):
             if img.endswith(".jpg"):
                 try:
@@ -330,7 +359,11 @@ class Run:
                     if raise_error:
                         raise e
                     else:
-                        print("Error on: ", img)
+                        if verbose:
+                            print("Error on: ", img)
+                        self.centers_ap[img] = (None, None)
+                        self.radii_ap[img] = (None, None)
+                        self.thetas_ap[img] = None
                         continue
         if save:
             print("Saving to csv...")
