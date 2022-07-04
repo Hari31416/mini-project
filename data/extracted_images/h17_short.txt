@@ -2,5 +2,5 @@
 ### First Frame ID: 006.jpg
 ### Last Frame ID: 
 ### Contact Frame ID: 080.jpg
-### Leave Frame ID: 
-### Angle: 25.017
+### Leave Frame ID: 100.jpg
+### Angle: 25.5

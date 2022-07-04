@@ -2,5 +2,5 @@
 ### First Frame ID: 007.jpg
 ### Last Frame ID: 
 ### Contact Frame ID: 078.jpg
-### Leave Frame ID: 
-### Angle: 25.017
+### Leave Frame ID: 099.jpg
+### Angle: 25.5

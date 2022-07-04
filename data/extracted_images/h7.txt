@@ -3,4 +3,4 @@
 ### Last Frame ID: 
 ### Contact Frame ID: 059.jpg
 ### Leave Frame ID: 
-### Angle: 25.017
+### Angle: 25
