@@ -11,7 +11,9 @@ class CenterExtracter:
     Class containing everything needed to extract the center of the drop from a given image.
     """
 
-    def __init__(self, region=(700, 350, 1200, 700), m=0.466667, c=152) -> None:
+    def __init__(
+        self, region=(700, 350, 1200, 700), m=0.466667, c=152, ref_image=None
+    ) -> None:
         """
         Instantiates the class.
 
@@ -37,6 +39,7 @@ class CenterExtracter:
         self.c = c
         self.image = None
         self.image_final = None
+        self.ref_image = ref_image
 
     def _update_params(self, key, value):
         """
@@ -382,7 +385,7 @@ class CenterExtracter:
         plt.title(title)
         plt.show()
 
-    def _subtract_image(self, image, ref_image="ref_image.jpg"):
+    def _subtract_image(self, image):
         """
         Subtracts the reference image from the image.
 
@@ -398,7 +401,7 @@ class CenterExtracter:
         numpy.ndarray
             subtracted image
         """
-        ref_image_np = plt.imread(ref_image)
+        ref_image_np = plt.imread(self.ref_image)
         return np.maximum((ref_image_np / 255.0 - image / 255.0) * 255, 0)
 
     def _all_points_binary(self, img, threshold=110):
@@ -666,7 +669,7 @@ class CenterExtracter:
             y coordinates of the points
         """
         xs, ys = self._get_points(
-            img, kernel=kernel, thres=thres, min_array_value=min_array_value, plot=plot
+            img, kernel=kernel, thres=thres, min_array_value=min_array_value
         )
         xs, ys = self._drop_points(xs, ys, drop_points=drop_points)
         return xs, ys

@@ -9,6 +9,7 @@ import matplotlib
 plt.rcdefaults()
 #
 
+
 class Smoother:
     """
     A class to deal with the smoothing of the data extracted
@@ -256,6 +257,16 @@ class Plotter:
         self.s = Smoother(df)
         os.makedirs(save_path, exist_ok=True)
 
+    def _validate_df(self):
+        if isinstance(self.df, str):
+            df = pd.read_csv(self.df)
+            df = df[df.notna()]
+            self.df = df.copy()
+        else:
+            self.df = self.df[self.df.notna()]
+            df = self.df.copy()
+        return df
+
     def get_samples(self, len_samples=49, title="", file_name=None):
         """
         Gets some sample images
@@ -276,13 +287,9 @@ class Plotter:
 
         plt.figure(figsize=(30, 30))
         rows = int(np.sqrt(len_samples))
-        if isinstance(self.df, str):
-            df = pd.read_csv(self.df)
-            self.df = df.copy()
-        else:
-            df = self.df.copy()
+        df = self._validate_df()
         df = df[df["x"].notna()]
-        samples = random.sample(list(df["id"][:-10]), len_samples)
+        samples = random.sample(list(df["id"]), len_samples)
         for img in samples:
             plt.subplot(rows, rows, samples.index(img) + 1)
             x, y = (
@@ -292,7 +299,8 @@ class Plotter:
             plt.imshow(plt.imread(img)[200:, 500:], cmap="gray")
             plt.hlines(y - 200, 0, 1300 - 600, color="r")
             plt.vlines(x - 500, 0, 800 - 300, color="g")
-            plt.title(img)
+            subtitle = img.split("/")[-1]
+            plt.title(subtitle)
             plt.axis("off")
         # plt.title(title)
         plt.tight_layout()
@@ -310,7 +318,9 @@ class Plotter:
             plt.savefig(save_dir)
         plt.show()
 
-    def plot_one(self, col1, col2=None, title="", filename=None, smooth=True, scatter=None):
+    def plot_one(
+        self, col1, col2=None, title="", filename=None, smooth=True, scatter=None
+    ):
         """
         Plots two columns or one column with time
 
@@ -340,10 +350,7 @@ class Plotter:
         else:
             if scatter is None:
                 scatter = True
-            if isinstance(self.df, str):
-                df = pd.read_csv(self.df)
-            else:
-                df = self.df.copy()
+            df = self._validate_df()
 
         plt.figure(figsize=(10, 10))
         if col2 is None:
@@ -355,7 +362,7 @@ class Plotter:
             plt.scatter(x_values, df[col1])
         else:
             plt.plot(x_values, df[col1])
-        
+
         plt.title(title)
         plt.xlabel(col2)
         plt.ylabel(col1)
