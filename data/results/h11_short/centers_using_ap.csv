@@ -106,11 +106,11 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h11_short/104.jpg,933,640,7,11,121.46705256773453
 ../../data/extracted_images/h11_short/105.jpg,937,638,6,10,119.17522138721124
 ../../data/extracted_images/h11_short/106.jpg,936,634,3,4,20.05352282957881
-../../data/extracted_images/h11_short/107.jpg,,,,,
+../../data/extracted_images/h11_short/107.jpg,939,634,16,0,89.95437383553926
 ../../data/extracted_images/h11_short/108.jpg,,,,,
-../../data/extracted_images/h11_short/109.jpg,962,622,5,1,26.35605857601787
+../../data/extracted_images/h11_short/109.jpg,962,622,1,5,116.3104324115571
 ../../data/extracted_images/h11_short/110.jpg,965,621,3,7,101.98648753328652
-../../data/extracted_images/h11_short/111.jpg,966,620,6,3,-12.032113697747286
+../../data/extracted_images/h11_short/111.jpg,966,620,6,3,-12.605071492878112
 ../../data/extracted_images/h11_short/112.jpg,974,624,10,9,51.56620156177409
 ../../data/extracted_images/h11_short/113.jpg,979,621,8,10,131.20733508495852
 ../../data/extracted_images/h11_short/114.jpg,984,620,9,10,46.9825392007275
@@ -125,9 +125,9 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h11_short/123.jpg,1016,628,25,6,121.46705256773453
 ../../data/extracted_images/h11_short/124.jpg,1020,625,21,4,123.185925953127
 ../../data/extracted_images/h11_short/125.jpg,1024,627,5,22,32.0856365273261
-../../data/extracted_images/h11_short/126.jpg,1028,627,4,21,32.65859432245692
+../../data/extracted_images/h11_short/126.jpg,1028,628,4,21,32.65859432245692
 ../../data/extracted_images/h11_short/127.jpg,1031,629,20,3,120.8940947726037
-../../data/extracted_images/h11_short/128.jpg,1034,626,2,16,38.96113006889598
+../../data/extracted_images/h11_short/128.jpg,1034,626,2,17,38.96113006889598
 ../../data/extracted_images/h11_short/129.jpg,1039,629,4,16,38.96113006889598
 ../../data/extracted_images/h11_short/130.jpg,1042,631,4,17,38.38817227376516
 ../../data/extracted_images/h11_short/131.jpg,1045,635,4,18,36.09634109324187
@@ -150,7 +150,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h11_short/148.jpg,1103,682,5,14,47.55549699585833
 ../../data/extracted_images/h11_short/149.jpg,1106,687,6,14,45.83662361046586
 ../../data/extracted_images/h11_short/150.jpg,1108,689,13,5,-43.54479242994257
-../../data/extracted_images/h11_short/151.jpg,1110,689,9,2,-36.09634109324187
+../../data/extracted_images/h11_short/151.jpg,1110,688,11,1,-36.66929888837269
 ../../data/extracted_images/h11_short/152.jpg,,,,,
 ../../data/extracted_images/h11_short/153.jpg,,,,,
 ../../data/extracted_images/h11_short/154.jpg,,,,,

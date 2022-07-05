@@ -2,14 +2,16 @@
 ### First Frame ID: 007.jpg
 ### Last Frame ID: 170.jpg
 ### Contact Frame ID: 062.jpg
-### Leave Frame ID: 085.jpg
+### Leave Frame ID: 081.jpg
 ### Angle: 24.5
 
 ************************************************************
 ### TOTAL FRAMES: 180
 ### NONE FRAMES: 25
 ### UNREALISTIC FRAMES: 2
+
 ************************************************************
+USING THE SMOOTHENED DATA
 AT CONTACT FRAME:
 ### ANGLE: 23.42
 ### VELOCITY: 4.65
@@ -17,8 +19,22 @@ AT CONTACT FRAME:
 ### Y VELOCITY: 4.65
 
 AT LEAVE FRAME:
-### ANGLE: -13.56
-### VELOCITY: 2.6
-### X VELOCITY: 2.52
-### Y VELOCITY: 0.61
+### ANGLE: -47.4
+### VELOCITY: 2.59
+### X VELOCITY: 1.76
+### Y VELOCITY: 1.91
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 22.76
+### VELOCITY: 4.72
+### X VELOCITY: -0.14
+### Y VELOCITY: 4.71
+
+AT LEAVE FRAME:
+### ANGLE: -42.51
+### VELOCITY: 2.33
+### X VELOCITY: 1.71
+### Y VELOCITY: 1.57
 ************************************************************

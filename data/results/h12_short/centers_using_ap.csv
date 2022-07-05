@@ -24,7 +24,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h12_short/022.jpg,866,572,6,9,109.43493886998723
 ../../data/extracted_images/h12_short/023.jpg,870,574,0,4,120.32113697747288
 ../../data/extracted_images/h12_short/024.jpg,,,,,
-../../data/extracted_images/h12_short/025.jpg,,,,,
+../../data/extracted_images/h12_short/025.jpg,854,591,8,0,89.95437383553926
 ../../data/extracted_images/h12_short/026.jpg,864,598,11,5,24.637185190625402
 ../../data/extracted_images/h12_short/027.jpg,865,602,6,12,117.45634800181874
 ../../data/extracted_images/h12_short/028.jpg,866,607,11,7,26.92901637114869
@@ -55,10 +55,10 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h12_short/053.jpg,938,644,11,9,103.705360918679
 ../../data/extracted_images/h12_short/054.jpg,942,642,7,9,59.01465289847479
 ../../data/extracted_images/h12_short/055.jpg,948,642,7,15,29.79380534680281
-../../data/extracted_images/h12_short/056.jpg,945,644,1,5,28.07493196141034
+../../data/extracted_images/h12_short/056.jpg,945,644,1,5,31.512678732195283
 ../../data/extracted_images/h12_short/057.jpg,,,,,
-../../data/extracted_images/h12_short/058.jpg,953,644,0,1,27.501974166279513
-../../data/extracted_images/h12_short/059.jpg,969,628,0,5,117.45634800181874
+../../data/extracted_images/h12_short/058.jpg,,,,,
+../../data/extracted_images/h12_short/059.jpg,969,628,0,6,118.02930579694959
 ../../data/extracted_images/h12_short/060.jpg,975,629,1,9,120.32113697747288
 ../../data/extracted_images/h12_short/061.jpg,979,629,1,10,124.90479933851948
 ../../data/extracted_images/h12_short/062.jpg,982,630,11,2,38.38817227376516
@@ -77,7 +77,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h12_short/075.jpg,1026,649,7,9,45.83662361046586
 ../../data/extracted_images/h12_short/076.jpg,1029,652,7,8,128.3425461093044
 ../../data/extracted_images/h12_short/077.jpg,1030,654,5,8,78.49521793292278
-../../data/extracted_images/h12_short/078.jpg,,,,,
+../../data/extracted_images/h12_short/078.jpg,1033,656,7,2,-12.605071492878112
 ../../data/extracted_images/h12_short/079.jpg,,,,,
 ../../data/extracted_images/h12_short/080.jpg,1025,668,19,6,-12.032113697747286
 ../../data/extracted_images/h12_short/081.jpg,1026,670,6,20,81.93296470370771

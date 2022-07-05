@@ -1,0 +1,40 @@
+### h21_short.tif
+### First Frame ID: 
+### Last Frame ID: 021.jpg
+### Contact Frame ID: 092.jpg
+### Leave Frame ID: 104.jpg
+### Angle: 29
+
+************************************************************
+### TOTAL FRAMES: 143
+### NONE FRAMES: 25
+### UNREALISTIC FRAMES: 4
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 24.19
+### VELOCITY: 7.1
+### X VELOCITY: -0.59
+### Y VELOCITY: 7.08
+
+AT LEAVE FRAME:
+### ANGLE: -74.71
+### VELOCITY: 6.11
+### X VELOCITY: 1.61
+### Y VELOCITY: 5.9
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 26.75
+### VELOCITY: 7.29
+### X VELOCITY: -0.29
+### Y VELOCITY: 7.29
+
+AT LEAVE FRAME:
+### ANGLE: -79.7
+### VELOCITY: 6.39
+### X VELOCITY: 1.14
+### Y VELOCITY: 6.29
+************************************************************

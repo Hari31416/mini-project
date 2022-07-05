@@ -2,5 +2,5 @@
 ### First Frame ID: 220.jpg
 ### Last Frame ID: 360.jpg
 ### Contact Frame ID: 263.jpg
-### Leave Frame ID: 315.jpg
+### Leave Frame ID: 285.jpg
 ### Angle: 27

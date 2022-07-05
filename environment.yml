@@ -1,0 +1,15 @@
+name: data-science
+
+dependencies:
+  - python=3.7
+  - pip
+  - numpy
+  - matplotlib
+  - pandas
+  - pip:
+      - scikit-image
+      - pillow
+      - tqdm
+      - seaborn
+      - scikit-learn
+      - peakutils

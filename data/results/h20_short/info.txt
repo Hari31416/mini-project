@@ -1,0 +1,40 @@
+### h20_short.tif
+### First Frame ID: 007.jpg
+### Last Frame ID: 130.jpg
+### Contact Frame ID: 088.jpg
+### Leave Frame ID: 101.jpg
+### Angle: 29
+
+************************************************************
+### TOTAL FRAMES: 140
+### NONE FRAMES: 23
+### UNREALISTIC FRAMES: 8
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 24.62
+### VELOCITY: 6.82
+### X VELOCITY: -0.52
+### Y VELOCITY: 6.8
+
+AT LEAVE FRAME:
+### ANGLE: -79.51
+### VELOCITY: 5.99
+### X VELOCITY: 1.09
+### Y VELOCITY: 5.89
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 27.88
+### VELOCITY: 7.29
+### X VELOCITY: -0.14
+### Y VELOCITY: 7.29
+
+AT LEAVE FRAME:
+### ANGLE: -77.32
+### VELOCITY: 5.86
+### X VELOCITY: 1.29
+### Y VELOCITY: 5.71
+************************************************************

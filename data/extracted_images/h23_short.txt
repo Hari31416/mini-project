@@ -1,6 +1,6 @@
 ### h23_short.tif
 ### First Frame ID: 006.jpg
-### Last Frame ID: 
+### Last Frame ID: 046.jpg
 ### Contact Frame ID: 035.jpg
 ### Leave Frame ID: 040.jpg
 ### Angle: 18.5

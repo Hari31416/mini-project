@@ -1,6 +1,6 @@
 ### h18_short.tif
 ### First Frame ID: 006.jpg
-### Last Frame ID: 
+### Last Frame ID: 134.jpg
 ### Contact Frame ID: 083.jpg
 ### Leave Frame ID: 100.jpg
 ### Angle: 29.5

@@ -1,0 +1,40 @@
+### h14_short.tif
+### First Frame ID: 007.jpg
+### Last Frame ID: 138.jpg
+### Contact Frame ID: 076.jpg
+### Leave Frame ID: 100.jpg
+### Angle: 25.5
+
+************************************************************
+### TOTAL FRAMES: 148
+### NONE FRAMES: 15
+### UNREALISTIC FRAMES: 8
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 24.89
+### VELOCITY: 6.34
+### X VELOCITY: -0.07
+### Y VELOCITY: 6.34
+
+AT LEAVE FRAME:
+### ANGLE: -29.84
+### VELOCITY: 3.2
+### X VELOCITY: 2.78
+### Y VELOCITY: 1.59
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 24.1
+### VELOCITY: 5.86
+### X VELOCITY: -0.14
+### Y VELOCITY: 5.86
+
+AT LEAVE FRAME:
+### ANGLE: -27.65
+### VELOCITY: 3.39
+### X VELOCITY: 3.0
+### Y VELOCITY: 1.57
+************************************************************

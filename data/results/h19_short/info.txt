@@ -1,0 +1,40 @@
+### h19_short.tif
+### First Frame ID: 006.jpg
+### Last Frame ID: 131.jpg
+### Contact Frame ID: 085.jpg
+### Leave Frame ID: 099.jpg
+### Angle: 29.5
+
+************************************************************
+### TOTAL FRAMES: 141
+### NONE FRAMES: 26
+### UNREALISTIC FRAMES: 4
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 28.74
+### VELOCITY: 6.68
+### X VELOCITY: -0.09
+### Y VELOCITY: 6.68
+
+AT LEAVE FRAME:
+### ANGLE: -87.47
+### VELOCITY: 5.63
+### X VELOCITY: 0.25
+### Y VELOCITY: 5.62
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 28.28
+### VELOCITY: 6.72
+### X VELOCITY: -0.14
+### Y VELOCITY: 6.71
+
+AT LEAVE FRAME:
+### ANGLE: -75.58
+### VELOCITY: 5.16
+### X VELOCITY: 1.29
+### Y VELOCITY: 5.0
+************************************************************

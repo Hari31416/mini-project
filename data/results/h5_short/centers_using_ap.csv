@@ -62,7 +62,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h5_short/060.jpg,866,573,9,10,94.53803619658584
 ../../data/extracted_images/h5_short/061.jpg,866,577,8,9,134.64508185574346
 ../../data/extracted_images/h5_short/062.jpg,868,576,7,2,21.772396214971284
-../../data/extracted_images/h5_short/063.jpg,870,579,0,2,110.58085446024887
+../../data/extracted_images/h5_short/063.jpg,869,578,2,0,24.637185190625402
 ../../data/extracted_images/h5_short/064.jpg,864,596,2,10,116.3104324115571
 ../../data/extracted_images/h5_short/065.jpg,864,597,4,11,112.29972784564136
 ../../data/extracted_images/h5_short/066.jpg,865,600,5,12,110.58085446024887
@@ -92,8 +92,8 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h5_short/090.jpg,914,625,5,11,111.72677005051052
 ../../data/extracted_images/h5_short/091.jpg,917,625,4,10,107.71606548459476
 ../../data/extracted_images/h5_short/092.jpg,921,624,10,3,20.626480624709636
-../../data/extracted_images/h5_short/093.jpg,,,,,
-../../data/extracted_images/h5_short/094.jpg,934,608,0,4,115.16451682129545
+../../data/extracted_images/h5_short/093.jpg,916,622,1,0,97.40282517223994
+../../data/extracted_images/h5_short/094.jpg,934,608,0,4,114.59155902616465
 ../../data/extracted_images/h5_short/095.jpg,936,608,2,7,112.29972784564136
 ../../data/extracted_images/h5_short/096.jpg,939,610,6,10,118.02930579694959
 ../../data/extracted_images/h5_short/097.jpg,942,609,7,11,118.6022635920804
@@ -155,7 +155,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h5_short/153.jpg,1163,627,9,12,64.1712730546522
 ../../data/extracted_images/h5_short/154.jpg,1167,629,9,11,59.58761069360562
 ../../data/extracted_images/h5_short/155.jpg,1169,631,8,10,52.13915935690492
-../../data/extracted_images/h5_short/156.jpg,1169,631,3,6,41.25296124941927
+../../data/extracted_images/h5_short/156.jpg,1170,632,4,7,43.54479242994257
 ../../data/extracted_images/h5_short/157.jpg,,,,,
 ../../data/extracted_images/h5_short/158.jpg,,,,,
 ../../data/extracted_images/h5_short/159.jpg,,,,,

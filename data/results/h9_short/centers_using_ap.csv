@@ -98,12 +98,12 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h9_short/096.jpg,922,630,6,11,107.71606548459476
 ../../data/extracted_images/h9_short/097.jpg,926,629,5,11,113.445643435903
 ../../data/extracted_images/h9_short/098.jpg,929,629,4,11,114.01860123103381
-../../data/extracted_images/h9_short/099.jpg,925,625,0,2,-38.96113006889598
+../../data/extracted_images/h9_short/099.jpg,925,625,0,1,-31.512678732195283
 ../../data/extracted_images/h9_short/100.jpg,,,,,
 ../../data/extracted_images/h9_short/101.jpg,946,611,6,1,23.49126960036375
 ../../data/extracted_images/h9_short/102.jpg,948,610,3,7,100.8405719430249
 ../../data/extracted_images/h9_short/103.jpg,949,608,6,3,-19.48056503444799
-../../data/extracted_images/h9_short/104.jpg,956,610,9,8,41.25296124941927
+../../data/extracted_images/h9_short/104.jpg,956,610,9,8,41.8259190445501
 ../../data/extracted_images/h9_short/105.jpg,962,609,11,9,43.54479242994257
 ../../data/extracted_images/h9_short/106.jpg,967,606,10,10,116.3104324115571
 ../../data/extracted_images/h9_short/107.jpg,972,604,10,11,60.16056848873644
@@ -112,7 +112,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h9_short/110.jpg,984,597,8,11,34.37746770784939
 ../../data/extracted_images/h9_short/111.jpg,990,597,11,10,91.67324722093171
 ../../data/extracted_images/h9_short/112.jpg,994,594,9,11,-2.291831180523293
-../../data/extracted_images/h9_short/113.jpg,997,591,9,8,102.55944532841735
+../../data/extracted_images/h9_short/113.jpg,997,591,9,8,101.98648753328652
 ../../data/extracted_images/h9_short/114.jpg,1003,590,8,10,114.59155902616465
 ../../data/extracted_images/h9_short/115.jpg,1005,587,8,7,2.864788975654116
 ../../data/extracted_images/h9_short/116.jpg,1010,587,8,9,130.63437728982768
@@ -155,7 +155,7 @@ id,x,y,r1,r2,theta
 ../../data/extracted_images/h9_short/153.jpg,1176,598,12,9,38.96113006889598
 ../../data/extracted_images/h9_short/154.jpg,1180,599,9,11,121.46705256773453
 ../../data/extracted_images/h9_short/155.jpg,1184,601,9,11,117.45634800181874
-../../data/extracted_images/h9_short/156.jpg,1188,603,10,10,100.8405719430249
+../../data/extracted_images/h9_short/156.jpg,1188,603,10,10,101.41352973815572
 ../../data/extracted_images/h9_short/157.jpg,1191,604,10,8,132.35325067522018
 ../../data/extracted_images/h9_short/158.jpg,1193,605,5,9,39.5340878640268
 ../../data/extracted_images/h9_short/159.jpg,,,,,
