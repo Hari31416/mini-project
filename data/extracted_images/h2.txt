@@ -1,6 +1,6 @@
 ### h2.tif
 ### First Frame ID: 000.jpg
-### Last Frame ID: 
-### Contact Frame ID: 
-### Leave Frame ID: 
+### Last Frame ID: 290.jpg
+### Contact Frame ID: 093.jpg
+### Leave Frame ID: 175.jpg
 ### Angle: 27

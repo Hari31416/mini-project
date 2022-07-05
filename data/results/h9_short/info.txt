@@ -1,0 +1,24 @@
+### h9_short.tif
+### First Frame ID: 008.jpg
+### Last Frame ID: 170.jpg
+### Contact Frame ID: 064.jpg
+### Leave Frame ID: 088.jpg
+### Angle: 24.5
+
+************************************************************
+### TOTAL FRAMES: 180
+### NONE FRAMES: 24
+### UNREALISTIC FRAMES: 8
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 20.46
+### VELOCITY: 5.11
+### X VELOCITY: -0.36
+### Y VELOCITY: 5.1
+
+AT LEAVE FRAME:
+### ANGLE: -20.25
+### VELOCITY: 2.72
+### X VELOCITY: 2.56
+### Y VELOCITY: 0.94
+************************************************************

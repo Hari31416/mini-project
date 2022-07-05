@@ -1,0 +1,24 @@
+### h3.tif
+### First Frame ID: 220.jpg
+### Last Frame ID: 360.jpg
+### Contact Frame ID: 263.jpg
+### Leave Frame ID: 315.jpg
+### Angle: 27
+
+************************************************************
+### TOTAL FRAMES: 370
+### NONE FRAMES: 46
+### UNREALISTIC FRAMES: 5
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 27.33
+### VELOCITY: 3.95
+### X VELOCITY: 0.02
+### Y VELOCITY: 3.95
+
+AT LEAVE FRAME:
+### ANGLE: 13.5
+### VELOCITY: 741.37
+### X VELOCITY: 720.88
+### Y VELOCITY: -173.07
+************************************************************

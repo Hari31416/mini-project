@@ -1,0 +1,24 @@
+### h1_try.tif
+### First Frame ID: 034.jpg
+### Last Frame ID: 209.jpg
+### Contact Frame ID: 073.jpg
+### Leave Frame ID: 139.jpg
+### Angle: 22
+
+************************************************************
+### TOTAL FRAMES: 219
+### NONE FRAMES: 95
+### UNREALISTIC FRAMES: 15
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 32.26
+### VELOCITY: 3.43
+### X VELOCITY: 0.61
+### Y VELOCITY: 3.37
+
+AT LEAVE FRAME:
+### ANGLE: -0.72
+### VELOCITY: 49.92
+### X VELOCITY: 49.91
+### Y VELOCITY: 0.63
+************************************************************

@@ -1,0 +1,24 @@
+### h6.tif
+### First Frame ID:011.jpg
+### Last Frame ID: 181.jpg
+### Contact Frame ID: 062.jpg
+### Leave Frame ID: 085.jpg
+### Angle: 24.5
+
+************************************************************
+### TOTAL FRAMES: 191
+### NONE FRAMES: 35
+### UNREALISTIC FRAMES: 6
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 21.48
+### VELOCITY: 4.42
+### X VELOCITY: -0.23
+### Y VELOCITY: 4.41
+
+AT LEAVE FRAME:
+### ANGLE: -19.94
+### VELOCITY: 2.5
+### X VELOCITY: 2.35
+### Y VELOCITY: 0.85
+************************************************************

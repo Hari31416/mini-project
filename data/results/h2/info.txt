@@ -1,0 +1,24 @@
+### h2.tif
+### First Frame ID: 000.jpg
+### Last Frame ID: 290.jpg
+### Contact Frame ID: 093.jpg
+### Leave Frame ID: 175.jpg
+### Angle: 27
+
+************************************************************
+### TOTAL FRAMES: 300
+### NONE FRAMES: 130
+### UNREALISTIC FRAMES: 4
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 26.6
+### VELOCITY: 3.57
+### X VELOCITY: -0.03
+### Y VELOCITY: 3.72
+
+AT LEAVE FRAME:
+### ANGLE: -41.25
+### VELOCITY: 1.18
+### X VELOCITY: 1.34
+### Y VELOCITY: 1.18
+************************************************************

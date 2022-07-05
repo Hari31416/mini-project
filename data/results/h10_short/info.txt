@@ -1,0 +1,24 @@
+### h10_short.tif
+### First Frame ID: 007.jpg
+### Last Frame ID: 168.jpg
+### Contact Frame ID: 067.jpg
+### Leave Frame ID: 088.jpg
+### Angle: 24.5
+
+************************************************************
+### TOTAL FRAMES: 178
+### NONE FRAMES: 23
+### UNREALISTIC FRAMES: 5
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 23.02
+### VELOCITY: 5.45
+### X VELOCITY: -0.14
+### Y VELOCITY: 5.45
+
+AT LEAVE FRAME:
+### ANGLE: -35.31
+### VELOCITY: 2.91
+### X VELOCITY: 2.37
+### Y VELOCITY: 1.68
+************************************************************

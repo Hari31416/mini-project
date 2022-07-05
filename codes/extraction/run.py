@@ -1,10 +1,9 @@
 import os
-from tabnanny import verbose
 import matplotlib.pyplot as plt
 from extract_center import CenterExtracter
 import pandas as pd
 import tqdm
-
+import numpy as np
 plt.rcdefaults()
 
 
@@ -354,7 +353,7 @@ class Run:
                     (x, y), (a, b), theta = self.c.fit_ellipse(img, **kwargs)
                     self.centers_ap[img] = (x, y)
                     self.radii_ap[img] = (a, b)
-                    self.thetas_ap[img] = theta
+                    self.thetas_ap[img] = theta * 180 / np.pi
                 except Exception as e:
                     if raise_error:
                         raise e

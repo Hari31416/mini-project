@@ -1,0 +1,24 @@
+### h11_short.tif
+### First Frame ID: 011.jpg
+### Last Frame ID: 156.jpg
+### Contact Frame ID: 072.jpg
+### Leave Frame ID: 151.jpg
+### Angle: 27.5
+
+************************************************************
+### TOTAL FRAMES: 166
+### NONE FRAMES: 18
+### UNREALISTIC FRAMES: 17
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 23.52
+### VELOCITY: 5.52
+### X VELOCITY: -0.38
+### Y VELOCITY: 5.51
+
+AT LEAVE FRAME:
+### ANGLE: -28.18
+### VELOCITY: 5.2
+### X VELOCITY: 4.59
+### Y VELOCITY: 2.46
+************************************************************

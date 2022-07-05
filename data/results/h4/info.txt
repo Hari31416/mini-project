@@ -1,0 +1,24 @@
+### h4.tif
+### First Frame ID: 070.jpg
+### Last Frame ID: 272.jpg
+### Contact Frame ID: 116.jpg
+### Leave Frame ID: 210.jpg
+### Angle: 24.5
+
+************************************************************
+### TOTAL FRAMES: 282
+### NONE FRAMES: 71
+### UNREALISTIC FRAMES: 11
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 17.58
+### VELOCITY: 3.85
+### X VELOCITY: -0.46
+### Y VELOCITY: 3.82
+
+AT LEAVE FRAME:
+### ANGLE: -31.95
+### VELOCITY: 4.01
+### X VELOCITY: 3.4
+### Y VELOCITY: 2.12
+************************************************************

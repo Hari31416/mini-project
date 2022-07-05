@@ -1,0 +1,24 @@
+### h5_short.tif
+### First Frame ID: 010.jpg
+### Last Frame ID: 170.jpg
+### Contact Frame ID: 059.jpg
+### Leave Frame ID: 081.jpg
+### Angle: 24.5
+
+************************************************************
+### TOTAL FRAMES: 180
+### NONE FRAMES: 24
+### UNREALISTIC FRAMES: 8
+************************************************************
+AT CONTACT FRAME:
+### ANGLE: 19.72
+### VELOCITY: 4.05
+### X VELOCITY: -0.34
+### Y VELOCITY: 4.03
+
+AT LEAVE FRAME:
+### ANGLE: -28.71
+### VELOCITY: 2.38
+### X VELOCITY: 2.09
+### Y VELOCITY: 1.14
+************************************************************
