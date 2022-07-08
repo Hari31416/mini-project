@@ -12,3 +12,5 @@ Here are the details about the title of various columns:
 12. **Velocity_at_Leave_Frame**: Velocity at Leave frame
 13. **X_Velocity_at_Leave_Frame**: X Velocity at Leave frame
 14. **Y_Velocity_at_Leave_Frame**: Y Velocity at Leave frame
+15. **Passthrough**: 1 if the drop passes through the film, 0 otherwise
+16. **H**: Height between the drop and the film

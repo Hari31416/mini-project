@@ -21,10 +21,10 @@ AT CONTACT FRAME:
 ### Y VELOCITY: 4.41
 
 AT LEAVE FRAME:
-### ANGLE: -43.49
-### VELOCITY: 2.67
-### X VELOCITY: 1.93
-### Y VELOCITY: 1.83
+### ANGLE: 7.66
+### VELOCITY: 2.98
+### X VELOCITY: 2.96
+### Y VELOCITY: -0.4
 
 ************************************************************
 USING THE RAW DATA
@@ -36,8 +36,8 @@ AT CONTACT FRAME:
 ### Y VELOCITY: 4.29
 
 AT LEAVE FRAME:
-### ANGLE: -40.24
-### VELOCITY: 2.43
-### X VELOCITY: 1.86
-### Y VELOCITY: 1.57
+### ANGLE: 2.86
+### VELOCITY: 2.86
+### X VELOCITY: 2.86
+### Y VELOCITY: -0.14
 ************************************************************

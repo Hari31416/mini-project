@@ -3,7 +3,7 @@
 ### Last Frame ID: 209.jpg
 ### Contact Frame ID: 073.jpg
 ### Leave Frame ID: 085.jpg
-### Angle: 22
+### Angle: 21.5
 
 ************************************************************
 ### TOTAL FRAMES: 219
@@ -15,13 +15,13 @@
 USING THE SMOOTHENED DATA
 AT CONTACT FRAME:
 ### H: 79.4
-### ANGLE: 32.98
+### ANGLE: 32.48
 ### VELOCITY: 3.45
 ### X VELOCITY: 0.66
 ### Y VELOCITY: 3.38
 
 AT LEAVE FRAME:
-### ANGLE: -50.46
+### ANGLE: -30.77
 ### VELOCITY: 3.17
 ### X VELOCITY: 2.73
 ### Y VELOCITY: 1.62
@@ -30,7 +30,7 @@ AT LEAVE FRAME:
 USING THE RAW DATA
 AT CONTACT FRAME:
 ### H: 74.0
-### ANGLE: 19.51
+### ANGLE: 19.01
 ### VELOCITY: 3.29
 ### X VELOCITY: -0.14
 ### Y VELOCITY: 3.29
