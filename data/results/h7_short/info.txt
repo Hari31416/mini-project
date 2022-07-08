@@ -1,0 +1,40 @@
+### h7_short.tif
+### First Frame ID: 006.jpg
+### Last Frame ID: 170.jpg
+### Contact Frame ID: 059.jpg
+### Leave Frame ID: 077.jpg
+### Angle: 25
+
+************************************************************
+### TOTAL FRAMES: 180
+### NONE FRAMES: 27
+### UNREALISTIC FRAMES: 4
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 23.17
+### VELOCITY: 4.45
+### X VELOCITY: -0.14
+### Y VELOCITY: 4.45
+
+AT LEAVE FRAME:
+### ANGLE: -53.12
+### VELOCITY: 2.65
+### X VELOCITY: 1.59
+### Y VELOCITY: 2.12
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 23.15
+### VELOCITY: 4.43
+### X VELOCITY: -0.14
+### Y VELOCITY: 4.43
+
+AT LEAVE FRAME:
+### ANGLE: -50.19
+### VELOCITY: 2.23
+### X VELOCITY: 1.43
+### Y VELOCITY: 1.71
+************************************************************

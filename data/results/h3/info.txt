@@ -1,0 +1,40 @@
+### h3.tif
+### First Frame ID: 220.jpg
+### Last Frame ID: 360.jpg
+### Contact Frame ID: 263.jpg
+### Leave Frame ID: 285.jpg
+### Angle: 27
+
+************************************************************
+### TOTAL FRAMES: 370
+### NONE FRAMES: 47
+### UNREALISTIC FRAMES: 4
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 27.33
+### VELOCITY: 3.95
+### X VELOCITY: 0.02
+### Y VELOCITY: 3.95
+
+AT LEAVE FRAME:
+### ANGLE: -58.12
+### VELOCITY: 2.72
+### X VELOCITY: 1.44
+### Y VELOCITY: 2.31
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 27.0
+### VELOCITY: 3.57
+### X VELOCITY: 0.0
+### Y VELOCITY: 3.57
+
+AT LEAVE FRAME:
+### ANGLE: -48.81
+### VELOCITY: 1.52
+### X VELOCITY: 1.0
+### Y VELOCITY: 1.14
+************************************************************

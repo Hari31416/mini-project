@@ -1,0 +1,40 @@
+### h25_short.tif
+### First Frame ID: 005.jpg
+### Last Frame ID: 030.jpg
+### Contact Frame ID: 021.jpg
+### Leave Frame ID: 023.jpg
+### Angle: 19
+
+************************************************************
+### TOTAL FRAMES: 40
+### NONE FRAMES: 17
+### UNREALISTIC FRAMES: 1
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 18.38
+### VELOCITY: 20.23
+### X VELOCITY: -0.22
+### Y VELOCITY: 20.23
+
+AT LEAVE FRAME:
+### ANGLE: 89.41
+### VELOCITY: 20.41
+### X VELOCITY: -0.21
+### Y VELOCITY: 20.41
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 17.77
+### VELOCITY: 20.0
+### X VELOCITY: -0.43
+### Y VELOCITY: 20.0
+
+AT LEAVE FRAME:
+### ANGLE: 88.77
+### VELOCITY: 20.0
+### X VELOCITY: -0.43
+### Y VELOCITY: 20.0
+************************************************************

@@ -1,0 +1,40 @@
+### h24.tif
+### First Frame ID: 006.jpg
+### Last Frame ID: 038.jpg
+### Contact Frame ID: 026.jpg
+### Leave Frame ID: 029.jpg
+### Angle: 20.5
+
+************************************************************
+### TOTAL FRAMES: 48
+### NONE FRAMES: 16
+### UNREALISTIC FRAMES: 0
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 28.0
+### VELOCITY: 15.95
+### X VELOCITY: 2.08
+### Y VELOCITY: 15.82
+
+AT LEAVE FRAME:
+### ANGLE: -75.35
+### VELOCITY: 15.02
+### X VELOCITY: 3.8
+### Y VELOCITY: 14.53
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 19.53
+### VELOCITY: 16.86
+### X VELOCITY: -0.29
+### Y VELOCITY: 16.86
+
+AT LEAVE FRAME:
+### ANGLE: 89.03
+### VELOCITY: 16.86
+### X VELOCITY: -0.29
+### Y VELOCITY: 16.86
+************************************************************

@@ -1,0 +1,40 @@
+### h22_short.tif
+### First Frame ID: 007.jpg
+### Last Frame ID: 120.jpg
+### Contact Frame ID: 093.jpg
+### Leave Frame ID: 103.jpg
+### Angle: 29.5
+
+************************************************************
+### TOTAL FRAMES: 130
+### NONE FRAMES: 14
+### UNREALISTIC FRAMES: 5
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 37.2
+### VELOCITY: 7.59
+### X VELOCITY: 1.02
+### Y VELOCITY: 7.52
+
+AT LEAVE FRAME:
+### ANGLE: -76.89
+### VELOCITY: 6.63
+### X VELOCITY: 1.5
+### Y VELOCITY: 6.46
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 29.5
+### VELOCITY: 7.14
+### X VELOCITY: 0.0
+### Y VELOCITY: 7.14
+
+AT LEAVE FRAME:
+### ANGLE: -80.13
+### VELOCITY: 6.67
+### X VELOCITY: 1.14
+### Y VELOCITY: 6.57
+************************************************************

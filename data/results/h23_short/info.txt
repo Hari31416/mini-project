@@ -1,0 +1,40 @@
+### h23_short.tif
+### First Frame ID: 006.jpg
+### Last Frame ID: 046.jpg
+### Contact Frame ID: 035.jpg
+### Leave Frame ID: 040.jpg
+### Angle: 18.5
+
+************************************************************
+### TOTAL FRAMES: 56
+### NONE FRAMES: 18
+### UNREALISTIC FRAMES: 1
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 17.96
+### VELOCITY: 12.5
+### X VELOCITY: -0.12
+### Y VELOCITY: 12.5
+
+AT LEAVE FRAME:
+### ANGLE: -89.78
+### VELOCITY: 12.39
+### X VELOCITY: 0.05
+### Y VELOCITY: 12.39
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 17.86
+### VELOCITY: 12.86
+### X VELOCITY: -0.14
+### Y VELOCITY: 12.86
+
+AT LEAVE FRAME:
+### ANGLE: 90.0
+### VELOCITY: 12.57
+### X VELOCITY: 0.0
+### Y VELOCITY: 12.57
+************************************************************

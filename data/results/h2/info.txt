@@ -1,0 +1,40 @@
+### h2.tif
+### First Frame ID: 000.jpg
+### Last Frame ID: 290.jpg
+### Contact Frame ID: 094.jpg
+### Leave Frame ID: 113.jpg
+### Angle: 27
+
+************************************************************
+### TOTAL FRAMES: 300
+### NONE FRAMES: 131
+### UNREALISTIC FRAMES: 3
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### ANGLE: 26.94
+### VELOCITY: 3.76
+### X VELOCITY: -0.0
+### Y VELOCITY: 3.76
+
+AT LEAVE FRAME:
+### ANGLE: -57.03
+### VELOCITY: 2.54
+### X VELOCITY: 1.38
+### Y VELOCITY: 2.13
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### ANGLE: 24.61
+### VELOCITY: 3.43
+### X VELOCITY: -0.14
+### Y VELOCITY: 3.43
+
+AT LEAVE FRAME:
+### ANGLE: -45.0
+### VELOCITY: 2.22
+### X VELOCITY: 1.57
+### Y VELOCITY: 1.57
+************************************************************
