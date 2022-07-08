@@ -4,3 +4,4 @@
 ### Contact Frame ID: 263.jpg
 ### Leave Frame ID: 285.jpg
 ### Angle: 27
+### Passthrough: 0

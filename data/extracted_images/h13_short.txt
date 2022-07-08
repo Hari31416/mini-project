@@ -4,3 +4,4 @@
 ### Contact Frame ID: 077.jpg
 ### Leave Frame ID: 097.jpg
 ### Angle: 27.5
+### Passthrough: 0
