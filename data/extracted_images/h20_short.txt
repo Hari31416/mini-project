@@ -4,3 +4,4 @@
 ### Contact Frame ID: 088.jpg
 ### Leave Frame ID: 101.jpg
 ### Angle: 29
+### Passthrough: 1
