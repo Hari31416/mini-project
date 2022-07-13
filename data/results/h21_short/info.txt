@@ -1,8 +1,8 @@
 ### h21_short.tif
 ### First Frame ID: 
-### Last Frame ID: 021.jpg
-### Contact Frame ID: 092.jpg
-### Leave Frame ID: 104.jpg
+### Last Frame ID: 021
+### Contact Frame ID: 092
+### Leave Frame ID: 104
 ### Angle: 29
 
 ************************************************************

@@ -1,8 +1,8 @@
 ### h6.tif
-### First Frame ID:011.jpg
-### Last Frame ID: 181.jpg
-### Contact Frame ID: 062.jpg
-### Leave Frame ID: 082.jpg
+### First Frame ID:011
+### Last Frame ID: 181
+### Contact Frame ID: 062
+### Leave Frame ID: 082
 ### Angle: 24.5
 
 ************************************************************

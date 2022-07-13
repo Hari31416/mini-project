@@ -1,8 +1,8 @@
 ### ref.tif
-### First Frame ID: 017.jpg
-### Last Frame ID: 161.jpg
-### Contact Frame ID: 068.jpg
-### Leave Frame ID: 090.jpg
+### First Frame ID: 017
+### Last Frame ID: 161
+### Contact Frame ID: 068
+### Leave Frame ID: 090
 ### Angle: 24.5
 
 ************************************************************
@@ -40,4 +40,10 @@ AT LEAVE FRAME:
 ### VELOCITY: 2.87
 ### X VELOCITY: 2.57
 ### Y VELOCITY: 1.29
+************************************************************
+USING CURVE FIT AT LEAVE FRAME
+### ANGLE: -37.12
+### VELOCITY: 5.84
+### X VELOCITY: 4.66
+### Y VELOCITY: -3.53
 ************************************************************

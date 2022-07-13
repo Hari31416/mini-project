@@ -1,8 +1,8 @@
 ### h11_short.tif
-### First Frame ID: 011.jpg
-### Last Frame ID: 156.jpg
-### Contact Frame ID: 072.jpg
-### Leave Frame ID: 092.jpg
+### First Frame ID: 011
+### Last Frame ID: 156
+### Contact Frame ID: 072
+### Leave Frame ID: 092
 ### Angle: 27.5
 
 ************************************************************

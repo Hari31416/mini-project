@@ -1,7 +1,7 @@
 ### h14_short.tif
-### First Frame ID: 007.jpg
-### Last Frame ID: 138.jpg
-### Contact Frame ID: 076.jpg
-### Leave Frame ID: 100.jpg
+### First Frame ID: 007
+### Last Frame ID: 138
+### Contact Frame ID: 076
+### Leave Frame ID: 100
 ### Angle: 25.5
 ### Passthrough: 1

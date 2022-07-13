@@ -1,7 +1,7 @@
 ### h9_short.tif
-### First Frame ID: 008.jpg
-### Last Frame ID: 170.jpg
-### Contact Frame ID: 064.jpg
-### Leave Frame ID: 085.jpg
+### First Frame ID: 008
+### Last Frame ID: 170
+### Contact Frame ID: 064
+### Leave Frame ID: 085
 ### Angle: 24.5
 ### Passthrough: 0

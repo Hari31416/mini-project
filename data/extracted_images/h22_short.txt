@@ -1,7 +1,7 @@
 ### h22_short.tif
-### First Frame ID: 007.jpg
-### Last Frame ID: 120.jpg
-### Contact Frame ID: 093.jpg
-### Leave Frame ID: 103.jpg
+### First Frame ID: 007
+### Last Frame ID: 120
+### Contact Frame ID: 093
+### Leave Frame ID: 103
 ### Angle: 29.5
 ### Passthrough: 1

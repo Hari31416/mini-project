@@ -1,7 +1,7 @@
 ### h3.tif
-### First Frame ID: 220.jpg
-### Last Frame ID: 360.jpg
-### Contact Frame ID: 263.jpg
-### Leave Frame ID: 285.jpg
+### First Frame ID: 220
+### Last Frame ID: 360
+### Contact Frame ID: 263
+### Leave Frame ID: 285
 ### Angle: 27
 ### Passthrough: 0

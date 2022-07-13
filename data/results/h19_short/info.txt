@@ -1,8 +1,8 @@
 ### h19_short.tif
-### First Frame ID: 006.jpg
-### Last Frame ID: 131.jpg
-### Contact Frame ID: 085.jpg
-### Leave Frame ID: 099.jpg
+### First Frame ID: 006
+### Last Frame ID: 131
+### Contact Frame ID: 085
+### Leave Frame ID: 099
 ### Angle: 29.5
 
 ************************************************************

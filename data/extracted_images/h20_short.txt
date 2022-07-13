@@ -1,7 +1,7 @@
 ### h20_short.tif
-### First Frame ID: 007.jpg
-### Last Frame ID: 130.jpg
-### Contact Frame ID: 088.jpg
-### Leave Frame ID: 101.jpg
+### First Frame ID: 007
+### Last Frame ID: 130
+### Contact Frame ID: 088
+### Leave Frame ID: 101
 ### Angle: 29
 ### Passthrough: 1

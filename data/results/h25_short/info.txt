@@ -1,8 +1,8 @@
 ### h25_short.tif
-### First Frame ID: 005.jpg
-### Last Frame ID: 030.jpg
-### Contact Frame ID: 021.jpg
-### Leave Frame ID: 023.jpg
+### First Frame ID: 005
+### Last Frame ID: 030
+### Contact Frame ID: 021
+### Leave Frame ID: 023
 ### Angle: 19
 
 ************************************************************
