@@ -2,6 +2,6 @@
 ### First Frame ID: 220
 ### Last Frame ID: 360
 ### Contact Frame ID: 263
-### Leave Frame ID: 285
+### Leave Frame ID: 294
 ### Angle: 27
-### Passthrough: 0
+### Passthrough: 1

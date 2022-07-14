@@ -2,6 +2,6 @@
 ### First Frame ID: 007
 ### Last Frame ID: 138
 ### Contact Frame ID: 076
-### Leave Frame ID: 100
+### Leave Frame ID: 103
 ### Angle: 25.5
 ### Passthrough: 1
