@@ -1,4 +1,0 @@
-class Person:
-    name = 'Kulwinder'
-
-    

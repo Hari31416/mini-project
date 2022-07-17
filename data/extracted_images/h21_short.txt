@@ -1,5 +1,5 @@
 ### h21_short.tif
-### First Frame ID: 
+### First Frame ID: 006
 ### Last Frame ID: 021
 ### Contact Frame ID: 092
 ### Leave Frame ID: 106

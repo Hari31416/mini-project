@@ -10,6 +10,4 @@ dependencies:
       - scikit-image
       - pillow
       - tqdm
-      - seaborn
-      - scikit-learn
       - peakutils

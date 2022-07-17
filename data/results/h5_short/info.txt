@@ -40,4 +40,10 @@ AT LEAVE FRAME:
 ### VELOCITY: 2.45
 ### X VELOCITY: 2.43
 ### Y VELOCITY: 0.29
+************************************************************USING CURVE FIT AT LEAVE FRAME
+### ANGLE: -37.88
+### VELOCITY: 4.84
+### X VELOCITY: 3.82
+### Y VELOCITY: -2.97
+### g: 0.0706
 ************************************************************
