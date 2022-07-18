@@ -44,12 +44,12 @@ AT LEAVE FRAME:
 ************************************************************
 USING CURVE FITTING
 AT CONTACT FRAME:
-### H: 73.0
-### ANGLE: 22.27
-### VELOCITY: 2.69
-### X VELOCITY: -0.01
-### Y VELOCITY: 2.69
-### g: 584.88
+### H: 71.0
+### ANGLE: 22.56
+### VELOCITY: 3.48
+### X VELOCITY: -0.03
+### Y VELOCITY: 3.48
+### g: 971.86
 
 AT LEAVE FRAME:
 ### ANGLE: -10.81

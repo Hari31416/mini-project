@@ -14,36 +14,46 @@
 ************************************************************
 USING THE SMOOTHENED DATA
 AT CONTACT FRAME:
-### H: 282.2
+### H: 283.3
 ### ANGLE: 28.74
 ### VELOCITY: 6.68
 ### X VELOCITY: -0.09
 ### Y VELOCITY: 6.68
 
 AT LEAVE FRAME:
-### ANGLE: -29.86
-### VELOCITY: 7.54
-### X VELOCITY: 6.54
-### Y VELOCITY: 3.75
+### ANGLE: -57.9
+### VELOCITY: 5.98
+### X VELOCITY: 3.18
+### Y VELOCITY: 5.07
 
 ************************************************************
 USING THE RAW DATA
 AT CONTACT FRAME:
-### H: 282.0
+### H: 283.0
 ### ANGLE: 28.28
 ### VELOCITY: 6.72
 ### X VELOCITY: -0.14
 ### Y VELOCITY: 6.71
 
 AT LEAVE FRAME:
-### ANGLE: -59.35
-### VELOCITY: 4.48
-### X VELOCITY: 2.29
-### Y VELOCITY: 3.86
-************************************************************USING CURVE FIT AT LEAVE FRAME
-### ANGLE: 47.02
-### VELOCITY: 5.32
-### X VELOCITY: 3.63
-### Y VELOCITY: 3.89
-### g: -0.0165
+### ANGLE: -65.85
+### VELOCITY: 4.54
+### X VELOCITY: 1.86
+### Y VELOCITY: 4.14
+
 ************************************************************
+USING CURVE FITTING
+AT CONTACT FRAME:
+### H: 283.0
+### ANGLE: 29.79
+### VELOCITY: 7.0
+### X VELOCITY: -0.04
+### Y VELOCITY: 7.0
+### g: 994.3
+
+AT LEAVE FRAME:
+### ANGLE: -54.17
+### VELOCITY: 6.48
+### X VELOCITY: 3.79
+### Y VELOCITY: 5.25
+### g: -3764.48
