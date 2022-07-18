@@ -1,5 +1,5 @@
 ### h5_short.tif
-### First Frame ID: 010
+### First Frame ID: 08
 ### Last Frame ID: 170
 ### Contact Frame ID: 059
 ### Leave Frame ID: 099

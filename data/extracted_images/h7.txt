@@ -1,6 +1,6 @@
 ### h7.tif
 ### First Frame ID: 006
-### Last Frame ID: 263
+### Last Frame ID: 170
 ### Contact Frame ID: 059
 ### Leave Frame ID: 098
 ### Angle: 25

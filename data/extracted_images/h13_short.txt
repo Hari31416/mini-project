@@ -1,6 +1,6 @@
 ### h13_short.tif
 ### First Frame ID: 010
-### Last Frame ID: 161
+### Last Frame ID: 167
 ### Contact Frame ID: 077
 ### Leave Frame ID: 116
 ### Angle: 27.5

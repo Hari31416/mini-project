@@ -1,7 +1,7 @@
 ### h4.tif
-### First Frame ID: 070
-### Last Frame ID: 272
+### First Frame ID: 069
+### Last Frame ID: 239
 ### Contact Frame ID: 116
-### Leave Frame ID: 158
+### Leave Frame ID: 157
 ### Angle: 24.5
 ### Passthrough: 0

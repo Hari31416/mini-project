@@ -21,9 +21,9 @@ AT CONTACT FRAME:
 ### Y VELOCITY: 6.1
 
 AT LEAVE FRAME:
-### ANGLE: -24.98
-### VELOCITY: 3.78
-### X VELOCITY: 3.43
+### ANGLE: -30.87
+### VELOCITY: 3.12
+### X VELOCITY: 2.68
 ### Y VELOCITY: 1.6
 
 ************************************************************
@@ -36,14 +36,24 @@ AT CONTACT FRAME:
 ### Y VELOCITY: 6.0
 
 AT LEAVE FRAME:
-### ANGLE: -14.04
-### VELOCITY: 3.53
-### X VELOCITY: 3.43
-### Y VELOCITY: 0.86
-************************************************************USING CURVE FIT AT LEAVE FRAME
-### ANGLE: 53.1
-### VELOCITY: 4.54
-### X VELOCITY: 2.73
-### Y VELOCITY: 3.63
-### g: -0.1792
+### ANGLE: -19.98
+### VELOCITY: 3.34
+### X VELOCITY: 3.14
+### Y VELOCITY: 1.14
+
 ************************************************************
+USING CURVE FITTING
+AT CONTACT FRAME:
+### H: 232.0
+### ANGLE: 25.94
+### VELOCITY: 6.21
+### X VELOCITY: -0.05
+### Y VELOCITY: 6.21
+### g: 952.15
+
+AT LEAVE FRAME:
+### ANGLE: -61.01
+### VELOCITY: 4.79
+### X VELOCITY: 2.32
+### Y VELOCITY: 4.19
+### g: -3211.71

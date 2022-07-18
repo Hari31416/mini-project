@@ -1,7 +1,7 @@
 ### h2.tif
-### First Frame ID: 000
-### Last Frame ID: 290
-### Contact Frame ID: 094
+### First Frame ID: 50
+### Last Frame ID: 209
+### Contact Frame ID: 093
 ### Leave Frame ID: 113
 ### Angle: 27
 ### Passthrough: 0

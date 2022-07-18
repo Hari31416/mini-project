@@ -1,5 +1,5 @@
 ### h3.tif
-### First Frame ID: 220
+### First Frame ID: 218
 ### Last Frame ID: 360
 ### Contact Frame ID: 263
 ### Leave Frame ID: 294

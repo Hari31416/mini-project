@@ -1,6 +1,6 @@
 ### h1.tif
 ### First Frame ID: 034
-### Last Frame ID: 209
+### Last Frame ID: 140
 ### Contact Frame ID: 073
 ### Leave Frame ID: 107
 ### Angle: 21.5
