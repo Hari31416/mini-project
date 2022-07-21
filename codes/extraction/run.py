@@ -197,7 +197,7 @@ class Run:
 
         for img in images[start + 1 : end]:
             try:
-                r, (xc, yc) = self.c.get_center(img, x=x, y=y, h=h, w=h, **kwargs)
+                (r1, r2), (xc, yc) = self.c.get_center(img, x=x, y=y, h=h, w=h, **kwargs)
                 self.centers_dc[img] = (xc_p, yc_p)
                 self.radii_dc[img] = (r1, r2)
                 x = x + (xc - xc_p)
