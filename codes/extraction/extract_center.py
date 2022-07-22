@@ -478,7 +478,7 @@ class CenterExtracter:
         # Convolving with the gaussian kernel and Differential Kernel
         diff_kernel = [-1, 0, 1]
         gaussian = np.arange(-6, 6, 0.5)
-        gaussian_kernel = np.exp(-(gaussian ** 2) / 2.0) / np.sqrt(2 * np.pi)
+        gaussian_kernel = np.exp(-(gaussian**2) / 2.0) / np.sqrt(2 * np.pi)
         gaussian = np.convolve(Y, gaussian_kernel, mode="same")
         differentiated = np.convolve(gaussian, diff_kernel, mode="same")
 

@@ -4,6 +4,7 @@ from extract_center import CenterExtracter
 import pandas as pd
 import tqdm
 import numpy as np
+
 plt.rcdefaults()
 
 
@@ -28,14 +29,7 @@ class Run:
         self.centers_ap = {}
         self.radii_ap = {}
         self.thetas_ap = {}
-
-    def get_informations(self):
-        """
-        Gets informations about that particular sequence of images.
-        """
-        text_file = self.path + ".txt"
-        with open(text_file, "r") as f:
-            print(f.read())
+        self.ref_image = None
 
     def rename_images(self):
         """
@@ -82,7 +76,7 @@ class Run:
         images = self.get_images()
         last_image = images[img_num]
         self.c.ref_image = last_image
-        return None
+        self.ref_image = last_image
 
     def save_to_csv(self, method="ap", file_name=None, include_crop=False):
         """
@@ -197,7 +191,9 @@ class Run:
 
         for img in images[start + 1 : end]:
             try:
-                (r1, r2), (xc, yc) = self.c.get_center(img, x=x, y=y, h=h, w=h, **kwargs)
+                (r1, r2), (xc, yc) = self.c.get_center(
+                    img, x=x, y=y, h=h, w=h, **kwargs
+                )
                 self.centers_dc[img] = (xc_p, yc_p)
                 self.radii_dc[img] = (r1, r2)
                 x = x + (xc - xc_p)
@@ -315,6 +311,7 @@ class Run:
         raise_error=False,
         num_images=None,
         verbose=True,
+        dynamic_cropping=False,
         **kwargs,
     ):
         """
@@ -347,9 +344,24 @@ class Run:
         print("Extracting data from images...")
         if num_images is not None:
             images = images[:num_images]
-        for img in tqdm.tqdm(images, desc="Extracting data from images"):
+        if dynamic_cropping:
+            img = images[0]
+            (x, y), (a, b), theta = self.c.fit_ellipse(img, **kwargs)
+            self.centers_ap[img] = (x, y)
+            self.radii_ap[img] = (a, b)
+            self.thetas_ap[img] = theta * 180 / np.pi
+        for img in tqdm.tqdm(images, desc="Extracting data from images..."):
             if img.endswith(".jpg"):
+                if dynamic_cropping:
+                    x_new = x - 25
+                    y_new = y - 25
+                    h = 50
+                    region_of_interest = (x_new, y_new, x_new + h, y_new + h)
+                    self.c = CenterExtracter(
+                        region=region_of_interest, ref_image=self.ref_image
+                    )
                 try:
+                    # print(str(img))
                     (x, y), (a, b), theta = self.c.fit_ellipse(img, **kwargs)
                     self.centers_ap[img] = (x, y)
                     self.radii_ap[img] = (a, b)
