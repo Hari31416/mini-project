@@ -1,6 +1,7 @@
 ### theta3_bounce.tif
-### First Frame ID: 
-### Last Frame ID: 
-### Contact Frame ID: 
-### Leave Frame ID: 
+### First Frame ID: 000
+### Last Frame ID: 061
+### Contact Frame ID: 000
+### Leave Frame ID: 034
 ### Angle: 31
+### Passthrough: 0

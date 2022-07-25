@@ -1,6 +1,7 @@
 ### theta6_bounce.tif
-### First Frame ID: 
-### Last Frame ID: 
-### Contact Frame ID: 
-### Leave Frame ID: 
+### First Frame ID: 000
+### Last Frame ID: 082
+### Contact Frame ID: 026
+### Leave Frame ID: 061
 ### Angle: 46
+### Passthrough: 1
