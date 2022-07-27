@@ -9,7 +9,7 @@
 ### TOTAL FRAMES: 105
 ### NONE FRAMES: 32
 ### UNREALISTIC FRAMES: 11
-### PASSTHROUGH: 1
+### PASSTHROUGH: 0
 
 ************************************************************
 USING THE SMOOTHENED DATA
