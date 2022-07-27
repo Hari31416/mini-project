@@ -52,8 +52,8 @@ AT CONTACT FRAME:
 ### g: 971.86
 
 AT LEAVE FRAME:
-### ANGLE: -10.81
-### VELOCITY: 2.45
+### ANGLE: -7.91
+### VELOCITY: 2.43
 ### X VELOCITY: 2.41
-### Y VELOCITY: 0.46
-### g: 628.0
+### Y VELOCITY: 0.33
+### g: 707.08

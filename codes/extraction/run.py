@@ -309,7 +309,8 @@ class Run:
         method="ap",
         file_name=None,
         raise_error=False,
-        num_images=None,
+        image_start=0,
+        image_end=-1,
         verbose=True,
         dynamic_cropping=False,
         **kwargs,
@@ -341,9 +342,7 @@ class Run:
         """
         print("Getting list of images...")
         images = self.get_images()
-        print("Extracting data from images...")
-        if num_images is not None:
-            images = images[:num_images]
+        images = images[image_start:image_end]
         if dynamic_cropping:
             img = images[0]
             (x, y), (a, b), theta = self.c.fit_ellipse(img, **kwargs)

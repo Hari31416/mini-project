@@ -7,24 +7,24 @@
 
 ************************************************************
 ### TOTAL FRAMES: 141
-### NONE FRAMES: 26
-### UNREALISTIC FRAMES: 4
+### NONE FRAMES: 16
+### UNREALISTIC FRAMES: 1
 ### PASSTHROUGH: 1
 
 ************************************************************
 USING THE SMOOTHENED DATA
 AT CONTACT FRAME:
-### H: 283.3
-### ANGLE: 28.74
-### VELOCITY: 6.68
-### X VELOCITY: -0.09
-### Y VELOCITY: 6.68
+### H: 285.5
+### ANGLE: 29.23
+### VELOCITY: 6.9
+### X VELOCITY: -0.03
+### Y VELOCITY: 6.9
 
 AT LEAVE FRAME:
-### ANGLE: -57.9
-### VELOCITY: 5.98
-### X VELOCITY: 3.18
-### Y VELOCITY: 5.07
+### ANGLE: -71.83
+### VELOCITY: 5.34
+### X VELOCITY: 1.67
+### Y VELOCITY: 5.08
 
 ************************************************************
 USING THE RAW DATA
@@ -52,8 +52,8 @@ AT CONTACT FRAME:
 ### g: 994.3
 
 AT LEAVE FRAME:
-### ANGLE: -54.17
-### VELOCITY: 6.48
-### X VELOCITY: 3.79
-### Y VELOCITY: 5.25
-### g: -3764.48
+### ANGLE: -58.59
+### VELOCITY: 4.42
+### X VELOCITY: 2.3
+### Y VELOCITY: 3.77
+### g: 907.47

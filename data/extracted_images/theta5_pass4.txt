@@ -1,7 +1,7 @@
 ### theta5_pass4.tif
 ### First Frame ID: 000
-### Last Frame ID: 
+### Last Frame ID: 085
 ### Contact Frame ID: 057
-### Leave Frame ID: 
+### Leave Frame ID: 083
 ### Angle: 56.5
 ### Passthrough: 1

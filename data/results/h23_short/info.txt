@@ -6,54 +6,54 @@
 ### Angle: 18.5
 
 ************************************************************
-### TOTAL FRAMES: 56
-### NONE FRAMES: 17
-### UNREALISTIC FRAMES: 3
+### TOTAL FRAMES: 49
+### NONE FRAMES: 5
+### UNREALISTIC FRAMES: 2
 ### PASSTHROUGH: 1
 
 ************************************************************
 USING THE SMOOTHENED DATA
 AT CONTACT FRAME:
-### H: 391.8
-### ANGLE: 17.55
-### VELOCITY: 12.75
-### X VELOCITY: -0.21
-### Y VELOCITY: 12.74
+### H: 342.6
+### ANGLE: 19.59
+### VELOCITY: 12.07
+### X VELOCITY: 0.23
+### Y VELOCITY: 12.06
 
 AT LEAVE FRAME:
-### ANGLE: -88.48
-### VELOCITY: 12.68
-### X VELOCITY: 0.34
-### Y VELOCITY: 12.67
+### ANGLE: -87.33
+### VELOCITY: 11.45
+### X VELOCITY: 0.53
+### Y VELOCITY: 11.43
 
 ************************************************************
 USING THE RAW DATA
 AT CONTACT FRAME:
-### H: 393.0
-### ANGLE: 17.86
-### VELOCITY: 12.86
-### X VELOCITY: -0.14
-### Y VELOCITY: 12.86
+### H: 343.0
+### ANGLE: 18.5
+### VELOCITY: 12.57
+### X VELOCITY: 0.0
+### Y VELOCITY: 12.57
 
 AT LEAVE FRAME:
-### ANGLE: -89.33
-### VELOCITY: 12.29
-### X VELOCITY: 0.14
-### Y VELOCITY: 12.29
+### ANGLE: -87.9
+### VELOCITY: 11.72
+### X VELOCITY: 0.43
+### Y VELOCITY: 11.71
 
 ************************************************************
 USING CURVE FITTING
 AT CONTACT FRAME:
-### H: 222.0
-### ANGLE: 19.56
-### VELOCITY: 13.1
-### X VELOCITY: -0.24
-### Y VELOCITY: 13.1
-### g: 975.62
+### H: 333.0
+### ANGLE: 19.26
+### VELOCITY: 13.14
+### X VELOCITY: -0.17
+### Y VELOCITY: 13.14
+### g: 1019.02
 
 AT LEAVE FRAME:
-### ANGLE: -87.31
-### VELOCITY: 14.43
-### X VELOCITY: 0.68
-### Y VELOCITY: 14.42
-### g: -11734.69
+### ANGLE: -87.24
+### VELOCITY: 10.85
+### X VELOCITY: 0.52
+### Y VELOCITY: 10.83
+### g: 969.92

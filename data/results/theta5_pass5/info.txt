@@ -1,0 +1,59 @@
+### theta5_pass5.tif
+### First Frame ID: 000
+### Last Frame ID: 
+### Contact Frame ID: 014
+### Leave Frame ID: 
+### Angle: 54.5
+
+************************************************************
+### TOTAL FRAMES: 45
+### NONE FRAMES: 27
+### UNREALISTIC FRAMES: 5
+### PASSTHROUGH: 1
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### H: 99.0
+### ANGLE: 53.33
+### VELOCITY: 7.0
+### X VELOCITY: -0.14
+### Y VELOCITY: 7.0
+
+AT LEAVE FRAME:
+### ANGLE: -83.02
+### VELOCITY: 7.05
+### X VELOCITY: 0.86
+### Y VELOCITY: 7.0
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### H: 99.0
+### ANGLE: 53.33
+### VELOCITY: 7.0
+### X VELOCITY: -0.14
+### Y VELOCITY: 7.0
+
+AT LEAVE FRAME:
+### ANGLE: -83.02
+### VELOCITY: 7.05
+### X VELOCITY: 0.86
+### Y VELOCITY: 7.0
+
+************************************************************
+USING CURVE FITTING
+AT CONTACT FRAME:
+### H: 93.0
+### ANGLE: 63.06
+### VELOCITY: 6.94
+### X VELOCITY: -1.03
+### Y VELOCITY: 6.86
+### g: 561.92
+
+AT LEAVE FRAME:
+### ANGLE: 82.13
+### VELOCITY: 7.55
+### X VELOCITY: -1.03
+### Y VELOCITY: 7.48
+### g: 561.92

@@ -1,0 +1,59 @@
+### theta1_bounce.tif
+### First Frame ID: 000
+### Last Frame ID: 104
+### Contact Frame ID: 010
+### Leave Frame ID: 042
+### Angle: 20.5
+
+************************************************************
+### TOTAL FRAMES: 104
+### NONE FRAMES: 8
+### UNREALISTIC FRAMES: 5
+### PASSTHROUGH: 0
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### H: 33.5
+### ANGLE: 40.9
+### VELOCITY: 3.93
+### X VELOCITY: 1.37
+### Y VELOCITY: 3.68
+
+AT LEAVE FRAME:
+### ANGLE: 39.65
+### VELOCITY: 5.56
+### X VELOCITY: 4.28
+### Y VELOCITY: -3.55
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### H: 21.0
+### ANGLE: 18.21
+### VELOCITY: 3.57
+### X VELOCITY: -0.14
+### Y VELOCITY: 3.57
+
+AT LEAVE FRAME:
+### ANGLE: 37.78
+### VELOCITY: 7.23
+### X VELOCITY: 5.71
+### Y VELOCITY: -4.43
+
+************************************************************
+USING CURVE FITTING
+AT CONTACT FRAME:
+### H: 22.0
+### ANGLE: 21.24
+### VELOCITY: 9.46
+### X VELOCITY: -0.12
+### Y VELOCITY: 9.46
+### g: 18974.44
+
+AT LEAVE FRAME:
+### ANGLE: 45.17
+### VELOCITY: 5.77
+### X VELOCITY: 4.06
+### Y VELOCITY: -4.09
+### g: 1001.29

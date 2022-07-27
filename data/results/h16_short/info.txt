@@ -7,8 +7,8 @@
 
 ************************************************************
 ### TOTAL FRAMES: 145
-### NONE FRAMES: 17
-### UNREALISTIC FRAMES: 5
+### NONE FRAMES: 6
+### UNREALISTIC FRAMES: 4
 ### PASSTHROUGH: 1
 
 ************************************************************
@@ -21,10 +21,10 @@ AT CONTACT FRAME:
 ### Y VELOCITY: 6.1
 
 AT LEAVE FRAME:
-### ANGLE: -30.87
-### VELOCITY: 3.12
-### X VELOCITY: 2.68
-### Y VELOCITY: 1.6
+### ANGLE: -31.78
+### VELOCITY: 3.3
+### X VELOCITY: 2.81
+### Y VELOCITY: 1.74
 
 ************************************************************
 USING THE RAW DATA
@@ -45,15 +45,15 @@ AT LEAVE FRAME:
 USING CURVE FITTING
 AT CONTACT FRAME:
 ### H: 232.0
-### ANGLE: 25.94
-### VELOCITY: 6.21
+### ANGLE: 25.91
+### VELOCITY: 6.36
 ### X VELOCITY: -0.05
-### Y VELOCITY: 6.21
-### g: 952.15
+### Y VELOCITY: 6.36
+### g: 997.32
 
 AT LEAVE FRAME:
-### ANGLE: -61.01
-### VELOCITY: 4.79
-### X VELOCITY: 2.32
-### Y VELOCITY: 4.19
-### g: -3211.71
+### ANGLE: -17.51
+### VELOCITY: 3.46
+### X VELOCITY: 3.3
+### Y VELOCITY: 1.04
+### g: 861.32

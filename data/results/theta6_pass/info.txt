@@ -1,0 +1,59 @@
+### theta6_pass.tif
+### First Frame ID: 000
+### Last Frame ID: 092
+### Contact Frame ID: 055 
+### Leave Frame ID: 085
+### Angle: 46
+
+************************************************************
+### TOTAL FRAMES: 121
+### NONE FRAMES: 29
+### UNREALISTIC FRAMES: 7
+### PASSTHROUGH: 1
+
+************************************************************
+USING THE SMOOTHENED DATA
+AT CONTACT FRAME:
+### H: 297.7
+### ANGLE: 46.89
+### VELOCITY: 7.88
+### X VELOCITY: 0.12
+### Y VELOCITY: 7.88
+
+AT LEAVE FRAME:
+### ANGLE: -32.7
+### VELOCITY: 6.54
+### X VELOCITY: 5.5
+### Y VELOCITY: 3.53
+
+************************************************************
+USING THE RAW DATA
+AT CONTACT FRAME:
+### H: 290.0
+### ANGLE: 46.0
+### VELOCITY: 6.86
+### X VELOCITY: 0.0
+### Y VELOCITY: 6.86
+
+AT LEAVE FRAME:
+### ANGLE: -26.03
+### VELOCITY: 6.84
+### X VELOCITY: 6.14
+### Y VELOCITY: 3.0
+
+************************************************************
+USING CURVE FITTING
+AT CONTACT FRAME:
+### H: 287.0
+### ANGLE: 45.97
+### VELOCITY: 7.53
+### X VELOCITY: 0.0
+### Y VELOCITY: 7.53
+### g: 963.5
+
+AT LEAVE FRAME:
+### ANGLE: -46.24
+### VELOCITY: 8.25
+### X VELOCITY: 5.7
+### Y VELOCITY: 5.96
+### g: 963.5

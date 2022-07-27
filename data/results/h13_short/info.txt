@@ -7,8 +7,8 @@
 
 ************************************************************
 ### TOTAL FRAMES: 171
-### NONE FRAMES: 18
-### UNREALISTIC FRAMES: 3
+### NONE FRAMES: 17
+### UNREALISTIC FRAMES: 4
 ### PASSTHROUGH: 0
 
 ************************************************************
@@ -52,8 +52,8 @@ AT CONTACT FRAME:
 ### g: 1001.35
 
 AT LEAVE FRAME:
-### ANGLE: 21.49
-### VELOCITY: 6.01
-### X VELOCITY: 5.59
-### Y VELOCITY: -2.2
-### g: 1014.36
+### ANGLE: 23.66
+### VELOCITY: 6.04
+### X VELOCITY: 5.53
+### Y VELOCITY: -2.42
+### g: 1108.62
