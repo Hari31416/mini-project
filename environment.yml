@@ -6,8 +6,9 @@ dependencies:
   - numpy
   - matplotlib
   - pandas
+  - scipy
   - pip:
-      - scikit-image
-      - pillow
       - tqdm
       - peakutils
+      - imageio
+      - imageio-ffmpeg
