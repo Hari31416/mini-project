@@ -191,12 +191,12 @@ class Smoother:
             df = self.remove_noises(df, **kwargs)
 
         # get velocities
-        df["vy"] = df["y"].diff()
-        df["vx"] = df["x"].diff()
-        df["v"] = np.sqrt(df["vy"] ** 2 + df["vx"] ** 2)
+        # df["vy"] = df["y"].diff()
+        # df["vx"] = df["x"].diff()
+        # df["v"] = np.sqrt(df["vy"] ** 2 + df["vx"] ** 2)
         return df
 
-    def smoothen(self, filter="sg", w=43, order=3):
+    def smoothen(self, filter="sg", w=43, order=3, **kwargs):
         """
         Smoothens the dataframe using savitzky golay, moving average or exponential moving average
 
@@ -216,7 +216,7 @@ class Smoother:
             The smoothened dataframe
         
         """
-        df = self.preporocess()
+        df = self.preporocess(**kwargs)
 
         num_cols = df.columns[(df.dtypes != "object")].values
 
@@ -267,7 +267,14 @@ class Plotter:
             df = self.df.copy()
         return df
 
-    def get_samples(self, len_samples=49, title="", file_name=None):
+    def get_samples(
+        self,
+        len_samples=49,
+        start_images=None,
+        end_images=None,
+        title="",
+        file_name=None,
+    ):
         """
         Gets some sample images
 
@@ -288,6 +295,15 @@ class Plotter:
         plt.figure(figsize=(30, 30))
         rows = int(np.sqrt(len_samples))
         df = self._validate_df()
+
+        def get_population(df=df, start_images=None, end_images=None):
+            if start_images is None:
+                start_images = 0
+            if end_images is None:
+                end_images = len(df)
+            return df[start_images:end_images]
+
+        df = get_population(df, start_images, end_images)
         df = df[df["x"].notna()]
         samples = random.sample(list(df["id"]), len_samples)
         for img in samples:
