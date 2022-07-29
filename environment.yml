@@ -1,14 +1,24 @@
 name: mini-project
 
 dependencies:
+  # Base dependencies
   - python=3.7
   - pip
+  # Numerical
   - numpy
-  - matplotlib
-  - pandas
   - scipy
+  # Visualization
+  - matplotlib
+  - seaborn
+  - pandas
+  # Image processing
+  - pillow
+  - scikit-image
+  - opencv-python
   - pip:
-      - tqdm
-      - peakutils
+      # Animation
       - imageio
       - imageio-ffmpeg
+      # Others
+      - tqdm
+      - peakutils
